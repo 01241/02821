@@ -12,8 +12,8 @@ I'm searching for a simple workflow for Offline Developement and versioning in s
 #### Related Links
 - AndroidStudio https://developer.android.com/studio/index.html
 
-License: WTFPL
-License URI: http://sam.zoy.org/wtfpl/
+#### License
+WTFPL / License URI: http://sam.zoy.org/wtfpl/
 
 
 
