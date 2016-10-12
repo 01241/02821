@@ -1,17 +1,22 @@
 # 02821 Projectname
 
-## Responsive Tables; Isotope; Sort; Filter
-I'm searching for a simple workflow for Offline Developement and versioning in small teams. This files are hosted for test purpose only.
+## About
+I'm searching for a simple workflow for Offline Developement and versioning in small teams. This files are hosted for test purpose only. Example project related to Responsive Tables; Isotope; Sort; Filter
 
-#### Related Links
-- AndroidStudio https://developer.android.com/studio/index.html
-
-Demo
+#### Demo
 
 * Offline: file:///C:/Users/01241/Documents/400-Projekte/02821%20Medaillen_vis/offline_develop/02821/index.html
 * Online: [http://markussteiger.ch/projekte/02821/](http://markussteiger.ch/projekte/02821/)
 
 
+#### Related Links
+- AndroidStudio https://developer.android.com/studio/index.html
+
+License: WTFPL
+License URI: http://sam.zoy.org/wtfpl/
+
+
+#Formating 
 ##Title 02 
 
 ###Titel 03 
@@ -36,3 +41,6 @@ html?
 </ul>
 </div>
 ```
+
+
+
