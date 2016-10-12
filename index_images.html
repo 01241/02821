@@ -1,0 +1,563 @@
+<!doctype html> 
+
+<html dir="ltr" lang="de">
+
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	
+	<title>Markus Steiger | Links</title>
+	
+	<link href='http://fonts.googleapis.com/css?family=Roboto:900,400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="library/css/flags.css?v=1" media="all" />
+
+    <script src="library/js/jquery.min.js"></script>
+    <!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
+
+	<script src="library/js/isotope.pkgd.min.js"></script>
+	
+	<link href='http://markussteiger.ch/favicon.ico' rel='shortcut icon' />
+	<link href='http://markussteiger.ch/favicon.ico' rel='icon' />
+	<link href='http://markussteiger.ch/apple-touch-icon.png' rel='apple-touch-icon' />
+	<link rel='canonical' href='http://01241.com/' />  
+	
+	<meta name="description" lang="de" content="Ausgesuchte Links zu Werkzeugen, Inspiration, Wordpress, Code und Programmierung, Design und Karten" />
+	<meta name="description" lang="pt" content="Links selecionados sobre Ferramentas de programação, Código, Wordpress, Material de inspiração e mapas" />
+	<meta name="description" lang="en" content="Selected, interesting Links about Programming tools, Inspiration, Wordpress, Coding, Design and maps" /> 
+	
+<style>
+
+html {
+    overflow-y: scroll;
+    width: 100%;
+    height: 100%;
+}
+
+body { font-family: 'Roboto', sans-serif !important; }
+
+#wrapper {
+	position: relative; 
+}
+
+h1 {
+	margin: 6% auto 0 auto;
+	font-weight: 900;
+	overflow: hidden;
+	font-size: 160px;
+	text-align: center;
+}
+
+#footer-isotope {
+	max-width: 800px;
+	margin: 120px auto 30px auto;
+	text-align: center;
+	padding: 20px 0 80px 0;
+	border-top: 1px solid #B8B8B8;
+	position: relative;
+	font-size: 80%;
+}
+
+.toplink-wrapper {
+	position: fixed;
+	bottom: 2%;
+	right: 2%;
+	display: none;
+	z-index: 99;
+	background: rgba(204, 204, 204, 0.34);
+	padding: 6px;
+	border-radius: 32px;
+}
+
+.icon-toplink:hover { opacity: 0.4; }
+
+.clearfix {
+  zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* ---- button ---- */
+
+.button {
+display: inline-block;
+margin: 0 2px 8px 2px;
+padding: 0.5em 1.0em;
+border: none;
+color: #222;
+font-size: 100%;
+cursor: pointer;
+border-radius: 4px;
+}
+
+.button:hover {
+  background-color: #8CF;
+  color: #222;
+}
+
+.button.is-checked {
+  background-color: #000;
+}
+
+#sorts .button.is-checked {
+  background-color: #848484;
+}
+
+.button.is-checked {
+  color: white;
+}
+
+button:focus {outline:0;}
+
+/* ---- button-group ---- */
+
+#item-selectors {
+	text-align: center;
+}
+
+#item-selectors div:last-child {
+	border-bottom: 1px solid #CCC;
+}
+
+.button-group {
+	margin: 2px 0 0px 0;
+	padding: 10px 0 0 0;
+	border-top: 1px solid #CCC;
+}
+
+.selector-name {
+	font-weight: 700;
+	font-size: 110%;
+	padding: 0 6px 0 0;
+}
+
+
+/* ---- isotope ---- */
+
+.isotope {
+  	border: 0px solid #333;
+  	width: 80%;
+	margin: 2% auto 0 auto;
+}
+
+.isotope:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+
+
+
+
+
+
+/* vertical-list
+------------------------- */
+
+.vertical-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 2px solid #484542;
+  background: hsla(0, 0%, 0%, 0.15);
+}
+
+.vertical-list__item {
+  width: 100%;
+  border-top: 1px solid #484542;
+}
+
+.vertical-list__item > * {
+  display: inline-block;
+  padding: 3px 4px;
+}
+
+.vertical-list__item .name { width: 20%; }
+.vertical-list__item .med-gold { width: 10%; }
+.vertical-list__item .med-silver { width: 10%; }
+.vertical-list__item .med-bronze { width: 10%; }
+.vertical-list__item .med-total { width: 20%; }
+
+.vertical-list__item .name { background: #efefef; }
+
+
+
+
+
+
+
+
+a.external {
+	margin: 0;
+	font-size: 80%;
+	padding: 2px 26px 2px 22px;
+	background: url("http://markussteiger.ch/projekte/02474/library/css/icon_externlink.png") 0px 3px no-repeat;
+	line-height: 115%;
+	display: inline-block;
+	word-wrap: break-word;
+}
+
+
+@media only screen and (min-width: 100px) and (max-width: 700px) {
+
+.isotope { width: 100%; }
+
+h1 {
+	margin: 16% auto 0% auto;
+	font-size: 64px;
+	text-align: left;
+}
+#item-selectors { text-align: left; }
+
+} /* end of media query */
+
+@media only screen and (min-width: 700px) and (max-width: 980px) {
+
+.isotope { width: 100%;  }
+
+h1 {
+	margin: 12% auto 2% auto;
+	font-size: 80px;
+	text-align: left;
+}
+#item-selectors { text-align: left; }
+
+} /* end of media query */
+
+@media only screen and (min-width: 980px) and (max-width: 1400px) {
+
+.isotope { width: 90%; margin: 2% auto 0 auto; }
+
+} /* end of media query */
+
+
+
+
+
+</style>
+
+	
+	
+
+
+	
+<script>
+
+
+
+
+//init Isotope
+var $table = $('.vertical-list').isotope({
+  layoutMode: 'vertical',
+  getSortData: {
+    name: '.name',
+    medgold: '.med-gold',
+    medsilver: '.med-silver parseInt',
+    category: '.category',
+    weight: function( itemElem ) {
+      var weight = $( itemElem ).find('.weight').text();
+      return parseFloat( weight.replace( /[\(\)]/g, '') ); 
+    }
+  }
+});
+
+// bind sort button click
+$('#sorts').on( 'click', 'button', function() {
+  var sortValue = $(this).attr('data-sort-value');
+  $table.isotope({ sortBy: sortValue });
+});
+
+// change is-checked class on buttons
+$('.button-group').each( function( i, buttonGroup ) {
+  var $buttonGroup = $( buttonGroup );
+  $buttonGroup.on( 'click', 'button', function() {
+    $buttonGroup.find('.is-checked').removeClass('is-checked');
+    $( this ).addClass('is-checked');
+  });
+});
+
+
+
+
+
+
+
+
+
+/*
+	
+$( function() {
+
+  var $container = $('.isotope').isotope({
+    itemSelector: '.item',
+    masonry: {
+      			columnWidth: 10
+    			},
+    getSortData: {
+      			name: '.name',
+      			datenumber: '[data-date]'
+    			}
+  });
+
+
+  var filterFns = {
+
+    numberGreaterThan50: function() {
+      var number = $(this).find('.number').text();
+      return parseInt( number, 10 ) > 50;
+    },
+  };
+
+
+  $('#filters').on( 'click', 'button', function() {
+    var filterValue = $( this ).attr('data-filter');
+
+    filterValue = filterFns[ filterValue ] || filterValue;
+    $container.isotope({ filter: filterValue });
+  });
+
+
+  $('#sorts').on( 'click', 'button', function() {
+    var sortByValue = $(this).attr('data-sort-by');
+    $container.isotope({ sortBy: sortByValue });
+  });
+  
+
+  $('.button-group').each( function( i, buttonGroup ) {
+    var $buttonGroup = $( buttonGroup );
+    $buttonGroup.on( 'click', 'button', function() {
+      $buttonGroup.find('.is-checked').removeClass('is-checked');
+      $( this ).addClass('is-checked');
+    });
+  });
+  
+});
+
+*/
+
+
+
+</script> 
+    	 
+
+
+</head> 
+	
+<body class="page--vertical" data-page="vertical">
+
+
+
+<div id="page">
+
+	
+	
+<h1>Links</h1>
+	
+<div id="wrapper">
+
+<div id="item-selectors">
+	<div id="filters" class="button-group clearfix">
+		<span class="selector-name">Filter:</span> 
+		<button class="button is-checked" data-filter="*">show all</button>
+		<button class="button" data-filter=".code">Code</button>
+		<button class="button" data-filter=".design">Design</button>
+		<button class="button" data-filter=".inspiration">Inspiration</button>
+		<button class="button" data-filter=".tool">Tool</button>
+		<button class="button" data-filter=".data">Data</button>
+		<button class="button" data-filter=".wordpress">Wordpress</button>
+		<button class="button" data-filter=".maps">Maps</button>
+		<button class="button" data-filter=".storytelling">Storytelling</button>
+	</div>
+	<div id="sorts" class="button-group"> 
+		<span class="selector-name">Sort:</span>
+		<button class="button is-checked" data-sort-by="original-order">Newest</button>
+  		<button class="button" data-sort-by="name">Title</button>
+	</div>
+</div>
+
+
+
+<div class="isotope">
+ 
+
+
+
+
+
+<div data-js-module="vertical-list">
+
+  <div class="button-group js-radio-button-group">
+    <button class="button is-checked" data-sort-by="original-order">original order</button>
+    <button class="button" data-sort-by="name">name</button>
+    <button class="button" data-sort-by="med-gold">Gold</button>
+    <button class="button" data-sort-by="med-silver">Silver</button>
+    <button class="button" data-sort-by="weight">weight</button>
+    <button class="button" data-sort-by="category">category</button>
+  </div>
+  
+  
+  
+  
+  
+<ul class="vertical-list">
+
+<li id="usa" class="item"><div class="rang">1</div><div class="flag90 usa"></div><div class="name"><h2>USA</h2></div><div class="med-gold">46</div><div class="med-silver">37</div><div class="med-bronze">38</div><div class="med-total">121</div><div class="population" data-popu="6418"></div></li>
+<li id="gbr" class="item"><div class="rang">2</div><div class="flag90 gbr"></div><div class="name"><h2>Großbritannien</h2></div><div class="med-gold">27</div><div class="med-silver">23</div><div class="med-bronze">17</div><div class="med-total">67</div><div class="population" data-popu="2210"></div></li>
+<li id="chn" class="item"><div class="rang">3</div><div class="flag90 chn"></div><div class="name"><h2>China</h2></div><div class="med-gold">26</div><div class="med-silver">18</div><div class="med-bronze">26</div><div class="med-total">70</div><div class="population" data-popu="48867"></div></li>
+<li id="rus" class="item"><div class="rang">4</div><div class="flag90 rus"></div><div class="name"><h2>Russland</h2></div><div class="med-gold">19</div><div class="med-silver">18</div><div class="med-bronze">19</div><div class="med-total">56</div><div class="population" data-popu="6865"></div></li>
+<li id="ger" class="item"><div class="rang">5</div><div class="flag90 ger"></div><div class="name"><h2>Deutschland</h2></div><div class="med-gold">17</div><div class="med-silver">10</div><div class="med-bronze">15</div><div class="med-total">42</div><div class="population" data-popu="4486"></div></li>
+<li id="jpn" class="item"><div class="rang">6</div><div class="flag90 jpn"></div><div class="name"><h2>Japan</h2></div><div class="med-gold">12</div><div class="med-silver">8</div><div class="med-bronze">21</div><div class="med-total">41</div><div class="population" data-popu="9759"></div></li>
+<li id="fra" class="item"><div class="rang">7</div><div class="flag90 fra"></div><div class="name"><h2>Frankreich</h2></div><div class="med-gold">10</div><div class="med-silver">18</div><div class="med-bronze">14</div><div class="med-total">42</div><div class="population" data-popu="5595"></div></li>
+<li id="kor" class="item"><div class="rang">8</div><div class="flag90 kor"></div><div class="name"><h2>Südkorea</h2></div><div class="med-gold">9</div><div class="med-silver">3</div><div class="med-bronze">9</div><div class="med-total">21</div><div class="population" data-popu="5391"></div></li>
+<li id="ita" class="item"><div class="rang">9</div><div class="flag90 ita"></div><div class="name"><h2>Italien</h2></div><div class="med-gold">8</div><div class="med-silver">12</div><div class="med-bronze">8</div><div class="med-total">28</div><div class="population" data-popu="6552"></div></li>
+<li id="aus" class="item"><div class="rang">10</div><div class="flag90 aus"></div><div class="name"><h2>Australien</h2></div><div class="med-gold">8</div><div class="med-silver">11</div><div class="med-bronze">10</div><div class="med-total">29</div><div class="population" data-popu="2585"></div></li>
+<li id="ned" class="item"><div class="rang">11</div><div class="flag90 ned"></div><div class="name"><h2>Niederlande</h2></div><div class="med-gold">8</div><div class="med-silver">7</div><div class="med-bronze">4</div><div class="med-total">19</div><div class="population" data-popu="1938"></div></li>
+<li id="hun" class="item"><div class="rang">12</div><div class="flag90 hun"></div><div class="name"><h2>Ungarn</h2></div><div class="med-gold">8</div><div class="med-silver">3</div><div class="med-bronze">4</div><div class="med-total">15</div><div class="population" data-popu="1180"></div></li>
+<li id="bra" class="item"><div class="rang">13</div><div class="flag90 bra"></div><div class="name"><h2>Brasilien</h2></div><div class="med-gold">7</div><div class="med-silver">6</div><div class="med-bronze">6</div><div class="med-total">19</div><div class="population" data-popu="27134"></div></li>
+<li id="esp" class="item"><div class="rang">14</div><div class="flag90 esp"></div><div class="name"><h2>Spanien</h2></div><div class="med-gold">7</div><div class="med-silver">4</div><div class="med-bronze">6</div><div class="med-total">17</div><div class="population" data-popu="6222"></div></li>
+<li id="ken" class="item"><div class="rang">15</div><div class="flag90 ken"></div><div class="name"><h2>Kenia</h2></div><div class="med-gold">6</div><div class="med-silver">6</div><div class="med-bronze">1</div><div class="med-total">13</div><div class="population" data-popu="6967"></div></li>
+<li id="jam" class="item"><div class="rang">16</div><div class="flag90 jam"></div><div class="name"><h2>Jamaika</h2></div><div class="med-gold">6</div><div class="med-silver">3</div><div class="med-bronze">2</div><div class="med-total">11</div><div class="population" data-popu="431"></div></li>
+<li id="cro" class="item"><div class="rang">17</div><div class="flag90 cro"></div><div class="name"><h2>Kroatien</h2></div><div class="med-gold">5</div><div class="med-silver">3</div><div class="med-bronze">2</div><div class="med-total">10</div><div class="population" data-popu="794"></div></li>
+<li id="cub" class="item"><div class="rang">18</div><div class="flag90 cub"></div><div class="name"><h2>Kuba</h2></div><div class="med-gold">5</div><div class="med-silver">2</div><div class="med-bronze">4</div><div class="med-total">11</div><div class="population" data-popu="2174"></div></li>
+<li id="nzl" class="item"><div class="rang">19</div><div class="flag90 nzl"></div><div class="name"><h2>Neuseeland</h2></div><div class="med-gold">4</div><div class="med-silver">9</div><div class="med-bronze">5</div><div class="med-total">18</div><div class="population" data-popu="928"></div></li>
+<li id="can" class="item"><div class="rang">20</div><div class="flag90 can"></div><div class="name"><h2>Kanada</h2></div><div class="med-gold">4</div><div class="med-silver">3</div><div class="med-bronze">15</div><div class="med-total">22</div><div class="population" data-popu="8057"></div></li>
+<li id="uzb" class="item"><div class="rang">21</div><div class="flag90 uzb"></div><div class="name"><h2>Usbekistan</h2></div><div class="med-gold">4</div><div class="med-silver">2</div><div class="med-bronze">7</div><div class="med-total">13</div><div class="population" data-popu="7330"></div></li>
+<li id="kaz" class="item"><div class="rang">22</div><div class="flag90 kaz"></div><div class="name"><h2>Kasachstan</h2></div><div class="med-gold">3</div><div class="med-silver">5</div><div class="med-bronze">9</div><div class="med-total">17</div><div class="population" data-popu="4887"></div></li>
+<li id="col" class="item"><div class="rang">23</div><div class="flag90 col"></div><div class="name"><h2>Kolumbien</h2></div><div class="med-gold">3</div><div class="med-silver">2</div><div class="med-bronze">3</div><div class="med-total">8</div><div class="population" data-popu="14931"></div></li>
+<li id="sui" class="item"><div class="rang">24</div><div class="flag90 sui"></div><div class="name"><h2>Schweiz</h2></div><div class="med-gold">3</div><div class="med-silver">2</div><div class="med-bronze">2</div><div class="med-total">7</div><div class="population" data-popu="2574"></div></li>
+<li id="iri" class="item"><div class="rang">25</div><div class="flag90 iri"></div><div class="name"><h2>Iran</h2></div><div class="med-gold">3</div><div class="med-silver">1</div><div class="med-bronze">4</div><div class="med-total">8</div><div class="population" data-popu="25194"></div></li>
+<li id="gre" class="item"><div class="rang">26</div><div class="flag90 gre"></div><div class="name"><h2>Griechenland</h2></div><div class="med-gold">3</div><div class="med-silver">1</div><div class="med-bronze">2</div><div class="med-total">6</div><div class="population" data-popu="3469"></div></li>
+<li id="arg" class="item"><div class="rang">27</div><div class="flag90 arg"></div><div class="name"><h2>Argentinien</h2></div><div class="med-gold">3</div><div class="med-silver">1</div><div class="med-bronze">0</div><div class="med-total">4</div><div class="population" data-popu="14005"></div></li>
+<li id="den" class="item"><div class="rang">28</div><div class="flag90 den"></div><div class="name"><h2>Dänemark</h2></div><div class="med-gold">2</div><div class="med-silver">6</div><div class="med-bronze">7</div><div class="med-total">15</div><div class="population" data-popu="2126"></div></li>
+<li id="swe" class="item"><div class="rang">29</div><div class="flag90 swe"></div><div class="name"><h2>Schweden</h2></div><div class="med-gold">2</div><div class="med-silver">6</div><div class="med-bronze">3</div><div class="med-total">11</div><div class="population" data-popu="3726"></div></li>
+<li id="rsa" class="item"><div class="rang">30</div><div class="flag90 rsa"></div><div class="name"><h2>Südafrika</h2></div><div class="med-gold">2</div><div class="med-silver">6</div><div class="med-bronze">2</div><div class="med-total">10</div><div class="population" data-popu="20976"></div></li>
+<li id="ukr" class="item"><div class="rang">31</div><div class="flag90 ukr"></div><div class="name"><h2>Ukraine</h2></div><div class="med-gold">2</div><div class="med-silver">5</div><div class="med-bronze">4</div><div class="med-total">11</div><div class="population" data-popu="17795"></div></li>
+<li id="srb" class="item"><div class="rang">32</div><div class="flag90 srb"></div><div class="name"><h2>Serbien</h2></div><div class="med-gold">2</div><div class="med-silver">4</div><div class="med-bronze">2</div><div class="med-total">8</div><div class="population" data-popu="2933"></div></li>
+<li id="pol" class="item"><div class="rang">33</div><div class="flag90 pol"></div><div class="name"><h2>Polen</h2></div><div class="med-gold">2</div><div class="med-silver">3</div><div class="med-bronze">6</div><div class="med-total">11</div><div class="population" data-popu="16101"></div></li>
+<li id="prk" class="item"><div class="rang">34</div><div class="flag90 prk"></div><div class="name"><h2>Nordkorea</h2></div><div class="med-gold">2</div><div class="med-silver">3</div><div class="med-bronze">2</div><div class="med-total">7</div><div class="population" data-popu="10843"></div></li>
+<li id="bel" class="item"><div class="rang">35</div><div class="flag90 bel"></div><div class="name"><h2>Belgien</h2></div><div class="med-gold">2</div><div class="med-silver">2</div><div class="med-bronze">2</div><div class="med-total">6</div><div class="population" data-popu="5084"></div></li>
+<li id="tha" class="item"><div class="rang">35</div><div class="flag90 tha"></div><div class="name"><h2>Thailand</h2></div><div class="med-gold">2</div><div class="med-silver">2</div><div class="med-bronze">2</div><div class="med-total">6</div><div class="population" data-popu="30612"></div></li>
+<li id="svk" class="item"><div class="rang">37</div><div class="flag90 svk"></div><div class="name"><h2>Slowakei</h2></div><div class="med-gold">2</div><div class="med-silver">2</div><div class="med-bronze">0</div><div class="med-total">4</div><div class="population" data-popu="2465"></div></li>
+<li id="geo" class="item"><div class="rang">38</div><div class="flag90 geo"></div><div class="name"><h2>Georgien</h2></div><div class="med-gold">2</div><div class="med-silver">1</div><div class="med-bronze">4</div><div class="med-total">7</div><div class="population" data-popu="1719"></div></li>
+<li id="aze" class="item"><div class="rang">39</div><div class="flag90 aze"></div><div class="name"><h2>Aserbaidschan</h2></div><div class="med-gold">1</div><div class="med-silver">7</div><div class="med-bronze">10</div><div class="med-total">18</div><div class="population" data-popu="5362"></div></li>
+<li id="blr" class="item"><div class="rang">40</div><div class="flag90 blr"></div><div class="name"><h2>Belarus</h2></div><div class="med-gold">1</div><div class="med-silver">4</div><div class="med-bronze">4</div><div class="med-total">9</div><div class="population" data-popu="6606"></div></li>
+<li id="tur" class="item"><div class="rang">41</div><div class="flag90 tur"></div><div class="name"><h2>Türkei</h2></div><div class="med-gold">1</div><div class="med-silver">3</div><div class="med-bronze">4</div><div class="med-total">8</div><div class="population" data-popu="58706"></div></li>
+<li id="arm" class="item"><div class="rang">42</div><div class="flag90 arm"></div><div class="name"><h2>Armenien</h2></div><div class="med-gold">1</div><div class="med-silver">3</div><div class="med-bronze">0</div><div class="med-total">4</div><div class="population" data-popu="2321"></div></li>
+<li id="cze" class="item"><div class="rang">43</div><div class="flag90 cze"></div><div class="name"><h2>Tschechien</h2></div><div class="med-gold">1</div><div class="med-silver">2</div><div class="med-bronze">7</div><div class="med-total">10</div><div class="population" data-popu="8308"></div></li>
+<li id="eth" class="item"><div class="rang">44</div><div class="flag90 eth"></div><div class="name"><h2>Äthiopien</h2></div><div class="med-gold">1</div><div class="med-silver">2</div><div class="med-bronze">5</div><div class="med-total">8</div><div class="population" data-popu="79513"></div></li>
+<li id="slo" class="item"><div class="rang">45</div><div class="flag90 slo"></div><div class="name"><h2>Slowenien</h2></div><div class="med-gold">1</div><div class="med-silver">2</div><div class="med-bronze">1</div><div class="med-total">4</div><div class="population" data-popu="1706"></div></li>
+<li id="ina" class="item"><div class="rang">46</div><div class="flag90 ina"></div><div class="name"><h2>Indonesien</h2></div><div class="med-gold">1</div><div class="med-silver">2</div><div class="med-bronze">0</div><div class="med-total">3</div><div class="population" data-popu="214637"></div></li>
+<li id="rou" class="item"><div class="rang">47</div><div class="flag90 rou"></div><div class="name"><h2>Rumänien</h2></div><div class="med-gold">1</div><div class="med-silver">1</div><div class="med-bronze">3</div><div class="med-total">5</div><div class="population" data-popu="17551"></div></li>
+<li id="brn" class="item"><div class="rang">48</div><div class="flag90 brn"></div><div class="name"><h2>Bahrain</h2></div><div class="med-gold">1</div><div class="med-silver">1</div><div class="med-bronze">0</div><div class="med-total">2</div><div class="population" data-popu="1252"></div></li>
+<li id="vie" class="item"><div class="rang">48</div><div class="flag90 vie"></div><div class="name"><h2>Vietnam</h2></div><div class="med-gold">1</div><div class="med-silver">1</div><div class="med-bronze">0</div><div class="med-total">2</div><div class="population" data-popu="83367"></div></li>
+<li id="tpe" class="item"><div class="rang">50</div><div class="flag90 tpe"></div><div class="name"><h2>Taiwan (Chinesisches Taipei)</h2></div><div class="med-gold">1</div><div class="med-silver">0</div><div class="med-bronze">2</div><div class="med-total">3</div><div class="population" data-popu="22909"></div></li>
+<li id="bah" class="item"><div class="rang">51</div><div class="flag90 bah"></div><div class="name"><h2>Bahamas</h2></div><div class="med-gold">1</div><div class="med-silver">0</div><div class="med-bronze">1</div><div class="med-total">2</div><div class="population" data-popu="384"></div></li>
+<li id="civ" class="item"><div class="rang">51</div><div class="flag90 civ"></div><div class="name"><h2>Elfenbeinküste</h2></div><div class="med-gold">1</div><div class="med-silver">0</div><div class="med-bronze">1</div><div class="med-total">2</div><div class="population" data-popu="22477"></div></li>
+<li id="fij" class="item"><div class="rang">54</div><div class="flag90 fij"></div><div class="name"><h2>Fidschi</h2></div><div class="med-gold">1</div><div class="med-silver">0</div><div class="med-bronze">0</div><div class="med-total">1</div><div class="population" data-popu="892"></div></li>
+<li id="jor" class="item"><div class="rang">54</div><div class="flag90 jor"></div><div class="name"><h2>Jordanien</h2></div><div class="med-gold">1</div><div class="med-silver">0</div><div class="med-bronze">0</div><div class="med-total">1</div><div class="population" data-popu="7595"></div></li>
+<li id="sin" class="item"><div class="rang">54</div><div class="flag90 sin"></div><div class="name"><h2>Singapur</h2></div><div class="med-gold">1</div><div class="med-silver">0</div><div class="med-bronze">0</div><div class="med-total">1</div><div class="population" data-popu="5535"></div></li>
+<li id="tjk" class="item"><div class="rang">54</div><div class="flag90 tjk"></div><div class="name"><h2>Tadschikistan</h2></div><div class="med-gold">1</div><div class="med-silver">0</div><div class="med-bronze">0</div><div class="med-total">1</div><div class="population" data-popu="8482"></div></li>
+<li id="kos" class="item"><div class="rang">54</div><div class="flag90 kos"></div><div class="name"><h2>Kosovo</h2></div><div class="med-gold">1</div><div class="med-silver">0</div><div class="med-bronze">0</div><div class="med-total">1</div><div class="population" data-popu="1797"></div></li>
+<li id="pur" class="item"><div class="rang">54</div><div class="flag90 pur"></div><div class="name"><h2>Puerto Rico</h2></div><div class="med-gold">1</div><div class="med-silver">0</div><div class="med-bronze">0</div><div class="med-total">1</div><div class="population" data-popu="3474"></div></li>
+<li id="mas" class="item"><div class="rang">60</div><div class="flag90 mas"></div><div class="name"><h2>Malaysia</h2></div><div class="med-gold">0</div><div class="med-silver">4</div><div class="med-bronze">1</div><div class="med-total">5</div><div class="population" data-popu="73978"></div></li>
+<li id="mex" class="item"><div class="rang">61</div><div class="flag90 mex"></div><div class="name"><h2>Mexiko</h2></div><div class="med-gold">0</div><div class="med-silver">3</div><div class="med-bronze">2</div><div class="med-total">5</div><div class="population" data-popu="396929"></div></li>
+<li id="alg" class="item"><div class="rang">62</div><div class="flag90 alg"></div><div class="name"><h2>Algerien</h2></div><div class="med-gold">0</div><div class="med-silver">2</div><div class="med-bronze">0</div><div class="med-total">2</div><div class="population" data-popu="198333"></div></li>
+<li id="irl" class="item"><div class="rang">62</div><div class="flag90 irl"></div><div class="name"><h2>Irland</h2></div><div class="med-gold">0</div><div class="med-silver">2</div><div class="med-bronze">0</div><div class="med-total">2</div><div class="population" data-popu="23204"></div></li>
+<li id="ltu" class="item"><div class="rang">64</div><div class="flag90 ltu"></div><div class="name"><h2>Litauen</h2></div><div class="med-gold">0</div><div class="med-silver">1</div><div class="med-bronze">3</div><div class="med-total">4</div><div class="population" data-popu="22386"></div></li>
+<li id="bul" class="item"><div class="rang">65</div><div class="flag90 bul"></div><div class="name"><h2>Bulgarien</h2></div><div class="med-gold">0</div><div class="med-silver">1</div><div class="med-bronze">2</div><div class="med-total">3</div><div class="population" data-popu="59817"></div></li>
+<li id="ven" class="item"><div class="rang">65</div><div class="flag90 ven"></div><div class="name"><h2>Venezuela</h2></div><div class="med-gold">0</div><div class="med-silver">1</div><div class="med-bronze">2</div><div class="med-total">3</div><div class="population" data-popu="259234"></div></li>
+<li id="ind" class="item"><div class="rang">67</div><div class="flag90 ind"></div><div class="name"><h2>Indien</h2></div><div class="med-gold">0</div><div class="med-silver">1</div><div class="med-bronze">1</div><div class="med-total">2</div><div class="population" data-popu="11918641"></div></li>
+<li id="mgl" class="item"><div class="rang">67</div><div class="flag90 mgl"></div><div class="name"><h2>Mongolei</h2></div><div class="med-gold">0</div><div class="med-silver">1</div><div class="med-bronze">1</div><div class="med-total">2</div><div class="population" data-popu="26901"></div></li>
+<li id="bdj" class="item"><div class="rang">69</div><div class="flag90 bdj"></div><div class="name"><h2>Burundi</h2></div><div class="med-gold">0</div><div class="med-silver">1</div><div class="med-bronze">0</div><div class="med-total">1</div><div class="population" data-popu="111789"></div></li>
+<li id="grn" class="item"><div class="rang">69</div><div class="flag90 grn"></div><div class="name"><h2>Grenada</h2></div><div class="med-gold">0</div><div class="med-silver">1</div><div class="med-bronze">0</div><div class="med-total">1</div><div class="population" data-popu="1068"></div></li>
+<li id="qat" class="item"><div class="rang">69</div><div class="flag90 qat"></div><div class="name"><h2>Katar</h2></div><div class="med-gold">0</div><div class="med-silver">1</div><div class="med-bronze">0</div><div class="med-total">1</div><div class="population" data-popu="22354"></div></li>
+<li id="nig" class="item"><div class="rang">69</div><div class="flag90 nig"></div><div class="name"><h2>Niger</h2></div><div class="med-gold">0</div><div class="med-silver">1</div><div class="med-bronze">0</div><div class="med-total">1</div><div class="population" data-popu="198991"></div></li>
+<li id="phi" class="item"><div class="rang">69</div><div class="flag90 phi"></div><div class="name"><h2>Philippinen</h2></div><div class="med-gold">0</div><div class="med-silver">1</div><div class="med-bronze">0</div><div class="med-total">1</div><div class="population" data-popu="1006994"></div></li>
+<li id="nor" class="item"><div class="rang">74</div><div class="flag90 nor"></div><div class="name"><h2>Norwegen</h2></div><div class="med-gold">0</div><div class="med-silver">0</div><div class="med-bronze">4</div><div class="med-total">4</div><div class="population" data-popu="129898"></div></li>
+<li id="egy" class="item"><div class="rang">75</div><div class="flag90 egy"></div><div class="name"><h2>Ägypten</h2></div><div class="med-gold">0</div><div class="med-silver">0</div><div class="med-bronze">3</div><div class="med-total">3</div><div class="population" data-popu="3050269"></div></li>
+<li id="tun" class="item"><div class="rang">75</div><div class="flag90 tun"></div><div class="name"><h2>Tunesien</h2></div><div class="med-gold">0</div><div class="med-silver">0</div><div class="med-bronze">3</div><div class="med-total">3</div><div class="population" data-popu="370260"></div></li>
+<li id="isr" class="item"><div class="rang">77</div><div class="flag90 isr"></div><div class="name"><h2>Israel</h2></div><div class="med-gold">0</div><div class="med-silver">0</div><div class="med-bronze">2</div><div class="med-total">2</div><div class="population" data-popu="419020"></div></li>
+<li id="dom" class="item"><div class="rang">78</div><div class="flag90 dom"></div><div class="name"><h2>Dominikanische Republik</h2></div><div class="med-gold">0</div><div class="med-silver">0</div><div class="med-bronze">1</div><div class="med-total">1</div><div class="population" data-popu="1052839"></div></li>
+<li id="est" class="item"><div class="rang">78</div><div class="flag90 est"></div><div class="name"><h2>Estland</h2></div><div class="med-gold">0</div><div class="med-silver">0</div><div class="med-bronze">1</div><div class="med-total">1</div><div class="population" data-popu="131200"></div></li>
+<li id="fin" class="item"><div class="rang">78</div><div class="flag90 fin"></div><div class="name"><h2>Finnland</h2></div><div class="med-gold">0</div><div class="med-silver">0</div><div class="med-bronze">1</div><div class="med-total">1</div><div class="population" data-popu="548201"></div></li>
+<li id="mar" class="item"><div class="rang">78</div><div class="flag90 mar"></div><div class="name"><h2>Marokko</h2></div><div class="med-gold">0</div><div class="med-silver">0</div><div class="med-bronze">1</div><div class="med-total">1</div><div class="population" data-popu="3437751"></div></li>
+<li id="mda" class="item"><div class="rang">78</div><div class="flag90 mda"></div><div class="name"><h2>Moldawien</h2></div><div class="med-gold">0</div><div class="med-silver">0</div><div class="med-bronze">1</div><div class="med-total">1</div><div class="population" data-popu="355415"></div></li>
+<li id="ngr" class="item"><div class="rang">78</div><div class="flag90 ngr"></div><div class="name"><h2>Nigeria</h2></div><div class="med-gold">0</div><div class="med-silver">0</div><div class="med-bronze">1</div><div class="med-total">1</div><div class="population" data-popu="18220196"></div></li>
+<li id="aut" class="item"><div class="rang">78</div><div class="flag90 aut"></div><div class="name"><h2>Österreich</h2></div><div class="med-gold">0</div><div class="med-silver">0</div><div class="med-bronze">1</div><div class="med-total">1</div><div class="population" data-popu="861109"></div></li>
+<li id="por" class="item"><div class="rang">78</div><div class="flag90 por"></div><div class="name"><h2>Portugal</h2></div><div class="med-gold">0</div><div class="med-silver">0</div><div class="med-bronze">1</div><div class="med-total">1</div><div class="population" data-popu="1034865"></div></li>
+<li id="tto" class="item"><div class="rang">78</div><div class="flag90 tto"></div><div class="name"><h2>Trinidad und Tobago</h2></div><div class="med-gold">0</div><div class="med-silver">0</div><div class="med-bronze">1</div><div class="med-total">1</div><div class="population" data-popu="136009"></div></li>
+<li id="uae" class="item"><div class="rang">78</div><div class="flag90 uae"></div><div class="name"><h2>Vereinigte Arabische Emirate</h2></div><div class="med-gold">0</div><div class="med-silver">0</div><div class="med-bronze">1</div><div class="med-total">1</div><div class="population" data-popu="915696"></div></li>
+
+
+</ul>
+
+</div>  <!-- END .isotope -->
+
+
+</div>  <!-- END .datamodule -->
+	
+	
+</div>  <!-- END #wrapper -->
+	
+
+	
+<div class="clearfix"></div>
+	
+<div id="footer-isotope">
+	<div class="textwidgetx">© <span id="copyright-year"></span> Markus Steiger - All Rights Reserved. <span class="divider"></span> <a href="http://www.01241.com/kontakt.html" class="black">Kontakt</a></div>	
+	<div class="toplink-wrapper"><a href="#top" class="toplink"><span class="icon-toplink"></span></a></div>				
+</div>			
+						
+
+</div> <!-- END #page -->
+
+<script>      
+	$('#copyright-year').html(new Date().getFullYear());
+
+	$(window).scroll(function() {
+   	 	if ($(this).scrollTop()) {
+    	  	  $('.toplink-wrapper').fadeIn('slow');
+   	 	} else {
+   	    	 $('.toplink-wrapper').fadeOut('slow');
+   			}
+	});
+
+  	$('a[href=#top]').click(function(){
+         	$('html, body').animate({scrollTop:0}, 'fast');
+         	return false;
+     	});
+</script>
+    	 
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-37356161-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+<link rel="stylesheet" type="text/css" href="http://markussteiger.ch/css/01241_print_only.css?v=1" media="all" />
+
+</body>
+</html>
