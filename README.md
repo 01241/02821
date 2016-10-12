@@ -16,24 +16,15 @@ License: WTFPL
 License URI: http://sam.zoy.org/wtfpl/
 
 
-#Formating 
-##Title 02 
-
-###Titel 03 
-
-#### Titel 04
-
-- 1 
-- 2
-- 3
 
 
-php
+
+formating php
 ```php
 'googlemap' => array('auto' => true),
 ```
 
-html?
+formating html
 ```html
 <div class="isotope">
 <ul class="vertical-list">
