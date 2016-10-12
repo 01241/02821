@@ -1,15 +1,10 @@
 # 02821 Projectname
 
-
-
 ## Responsive Tables; Isotope; Sort; Filter
-```html
-This files are hosted on Github for test purpose only.
-```
-I'm searching for a simple workflow for Offline Developement and versioning in small teams.
+I'm searching for a simple workflow for Offline Developement and versioning in small teams. This files are hosted for test purpose only.
 
-Related Links
-AndroidStudio https://developer.android.com/studio/index.html
+#### Related Links
+- AndroidStudio https://developer.android.com/studio/index.html
 
 Demo
 
