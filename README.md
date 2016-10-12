@@ -1,9 +1,7 @@
 # 02821
-Test Offline Workflow with AndroidStudio; Responsive Tables; Isotope; Sort; Filter
+Tags: Test Offline Workflow with AndroidStudio; Responsive Tables; Isotope; Sort; Filter
 
-
-
-
+This files is are hosted on Github for test purpose. I am searching for a simple workflow for Offline Developement and versioning.
 
 Demo
 
