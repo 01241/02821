@@ -1,0 +1,734 @@
+<!doctype html> 
+
+<html dir="ltr" lang="de">
+
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+	
+	<title>Medallienspiegel Rio 2016</title>
+	
+	<link href='https://fonts.googleapis.com/css?family=Roboto:700,400' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	
+	<link rel="stylesheet" type="text/css" href="library/css/flags.css?v=1" media="all" />
+
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	
+	<script src="library/js/isotope.pkgd.min.js"></script>
+	
+	<link href='http://markussteiger.ch/favicon.ico' rel='shortcut icon' />
+	<link href='http://markussteiger.ch/favicon.ico' rel='icon' />
+	<link href='http://markussteiger.ch/apple-touch-icon.png' rel='apple-touch-icon' />
+	<link rel='canonical' href='http://01241.com/' />
+	
+<style>
+
+html, body {
+margin: 0;
+padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+body { font-family: 'Roboto', sans-serif !important; }
+
+
+.display-none {
+	display: none !important;
+}
+
+.display-table { display: table; height: 100%; width: 100%; }
+.display-table-cell { display: table-cell; vertical-align: middle; }
+
+
+
+
+
+#page, #intro-container {
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-color: #fff;
+  text-align: center;
+  position: relative;
+  z-index: 4;
+}
+
+
+
+
+#intro-container {
+	background-color: #ccc;
+	height: 50vh; 
+	background-image: url(library/css/bg_image.jpg);
+    background-repeat: no-repeat;
+  	background-position: center center; 
+  	 color: #fff;
+  	 
+}
+
+h1 {
+    margin: 0;
+    font-weight: 400;
+    overflow: hidden;
+    font-size: 8vw;
+        text-shadow: 2px 2px 18px #000;
+        letter-spacing: -0.02em;
+    
+}
+
+h2 {
+	margin: 0;
+	font-weight: 400;
+	    font-size: 20px;
+}
+
+
+#header {
+    background: #fff;
+    padding: 30px 0 0 0;
+}
+
+#header.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 900;
+    box-shadow: 1px 1px 18px 0px #c7c7c7;
+}
+
+
+#footer {
+	max-width: 800px;
+	margin: 120px auto 30px auto;
+	text-align: center;
+	padding: 20px 0 80px 0;
+	border-top: 1px solid #B8B8B8;
+	position: relative;
+}
+
+.toplink-wrapper {
+	position: fixed;
+	bottom: 2%;
+	right: 2%;
+	display: none;
+	z-index: 99;
+    background: #fff;
+    padding: 6px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    width: 48px;
+    height: 48px;
+    opacity: 1;
+}
+
+.toplink-wrapper i {
+    font-size: 32px;
+    color: #000 !important;
+}
+
+.toplink-wrapper:hover { opacity: 0.8; }
+
+.clearfix {
+  zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* ---- button ---- */
+
+.button {
+	display: inline-block;
+	margin: 0 2px 8px 2px;
+	padding: 0.5em 1.0em;
+	border: 1px solid #ddd;
+	color: #2872ff;
+	font-size: 100%;
+	cursor: pointer;
+	border-radius: 4px;
+}
+
+.button:hover {
+  background-color: #639eca;
+  color: #fff;
+}
+
+.button.is-checked {
+  background-color: #000;
+}
+
+#sorts .button.is-checked {
+  background-color: #656565;
+}
+
+.button.is-checked {
+  color: white;
+}
+
+button:focus {outline:0;}
+
+/* ---- button-group ---- */
+
+#item-selectors {
+	text-align: center;
+	    margin: 0 0 20px 0;
+}
+
+.button-group {
+	margin: 0;
+	padding: 0;
+}
+
+
+
+/* ---- isotope ---- */
+
+.isotope, #table-head-wrap {
+  	width: 60%;
+	margin: 0 auto;
+}
+
+.isotope:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+
+
+
+/* vertical-list
+------------------------- */
+
+.vertical-list, #head {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.item {
+  border-top: 1px solid #484542;
+}
+
+#head .item {
+    border-top: 1px solid #484542;
+    padding: 4px 0 0 0;
+    font-weight: 700;
+}
+
+#head, #head h2 {
+  font-size: 16px !important;
+font-weight: 700;
+}
+
+#head .medals-wrap {
+	    vertical-align: top;
+	    padding: 3px 0 0 0;
+}
+
+.item, #head {
+	width: 100%;
+}
+
+.item > * {
+  display: inline-block;
+  padding: 3px 4px;
+}
+
+.name-wrap {
+    width: 35%;
+}
+.medals-wrap {
+    width: 48%;
+        padding: 6px 0 0 0;
+}
+
+.item .rang { width: 15%; float: left; margin: 0;     text-align: left;}
+.item .flag { float: left; margin: 0 18px 3px 0;}
+.item .name { float: left; margin: 0 0 0 0; }
+
+.item .med-gold { width: 23%; float: left; }
+.item .med-silver { width: 23%; float: left; }
+.item .med-bronze { width: 23%; float: left; }
+.item .med-total { width: 23%; float: left; }
+
+.item .med-gold,
+.item .med-silver,
+.item .med-bronze,
+.item .med-total {
+    text-align: center;
+}
+
+
+.med-gold span,
+.med-silver span,
+.med-bronze span,
+.med-total span {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+        text-align: center;
+            box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+}
+
+.med-gold span { background: #ffdd2d; }
+.med-silver span { background: #c3c3c3; }
+.med-bronze span { background: #f1ad57; }
+.med-total span { background: #fff; color: #000; font-weight: 700;}
+
+.rang-popu, .rang-orig {
+    width: 40px;
+    display: inline-block;
+    padding: 0%;
+    font-size: 32px;
+}
+
+.rang-popu-icon {
+width: 20px;
+    display: inline-block;
+    text-align: right;
+}
+
+.rang-popu-icon i{
+    font-size: 16px;
+        margin: 4px 0 0 0;
+        color: #999;
+}
+
+.rang-diff {
+    text-align: right;
+    display: inline-block;
+    width: 21px;
+    color: #999;
+}
+
+
+
+
+
+@media only screen and (min-width: 100px) and (max-width: 700px) {
+
+.isotope { width: 100%; }
+.item {
+  	position: relative;
+  	float: left;
+  	width: 100%;
+  	margin: 10px 0 10px 0;
+  	    text-align: left;
+}
+
+.item .rang {
+    width: 100%;
+    margin: 2px 0 2px 0;
+        text-align: left;
+}
+
+.name-wrap {
+    width: 100%;
+}
+
+#head .name-wrap {
+    display: none;
+}
+
+#table-head-wrap {
+    width: 100%;
+        display: none;
+}
+
+.medals-wrap {
+        width: 240px;
+}
+
+
+h1 {
+	font-size: 30px;
+}
+
+} /* end of media query */
+
+@media only screen and (min-width: 700px) and (max-width: 980px) {
+
+.isotope, #table-head-wrap { width: 95%;  }
+
+} /* end of media query */
+
+@media only screen and (min-width: 980px) and (max-width: 1400px) {
+
+.isotope, #table-head-wrap { width: 74%; margin: 2% auto 0 auto; }
+
+} /* end of media query */
+
+
+
+
+
+</style>
+
+	
+	
+
+
+	
+<script>
+	
+$( function() {
+  var $container = $('.vertical-list').isotope({
+	  layoutMode: 'vertical',
+    itemSelector: '.item',
+    transitionDuration: '0.8s',
+
+    getSortData: {
+      			name: '.name',
+      			gold: '.med-gold parseInt',
+      			silver: '.med-silver parseInt',
+      			bronce: '.med-bronze parseInt',
+      			population: '[data-popu] parseInt'    
+    			},
+    			
+    			// sortBy : 'population',
+    			
+    			  sortAscending: {
+    				    name: true,
+    				    population: true,
+    				    gold: false,
+    				    silver: false,
+    				    bronce: false
+    				  }
+	});
+
+  
+
+  
+
+  
+  
+  /*
+  
+  // filter functions  show if number is greater than 50
+  var filterFns = {
+    numberGreaterThan50: function() {
+      var number = $(this).find('.number').text();
+      return parseInt( number, 10 ) > 50;
+    },
+  };
+
+  */
+  
+  
+  // bind filter button click
+  $('#filters').on( 'click', 'button', function() {
+    var filterValue = $( this ).attr('data-filter');
+    // use filterFn if matches value
+    filterValue = filterFns[ filterValue ] || filterValue;
+    $container.isotope({ filter: filterValue });
+  });
+
+  /*
+  // bind sort button click
+  $('#sorts').on( 'click', 'button', function() {
+    var sortByValue = $(this).attr('data-sort-by');
+    // $(".med-gold").toggleClass("active");
+    $container.isotope({ sortBy: sortByValue });
+  });
+  */
+	
+	$(function() {
+	      $("#population").click( function()
+	           {
+	  		var sortByValue = $(this).attr('data-sort-by');
+			$(".rang-orig").addClass("display-none");
+			$(".rang-popu").removeClass("display-none");
+			$(".rang-diff").removeClass("display-none");
+			$(".rang-popu-icon").removeClass("display-none");
+		    $container.isotope({ sortBy: sortByValue });
+	           }
+	      );
+	});
+  
+	$(function() {
+	      $("#original").click( function()
+	           {
+	  		var sortByValue = $(this).attr('data-sort-by');
+			$(".rang-orig").removeClass("display-none");
+			$(".rang-popu").addClass("display-none");
+			$(".rang-diff").addClass("display-none");
+			$(".rang-popu-icon").addClass("display-none");
+		    $container.isotope({ sortBy: sortByValue });
+	           }
+	      );
+	});
+	
+	
+	
+  
+  // change is-checked class on buttons
+  $('.button-group').each( function( i, buttonGroup ) {
+    var $buttonGroup = $( buttonGroup );
+    $buttonGroup.on( 'click', 'button', function() {
+      $buttonGroup.find('.is-checked').removeClass('is-checked');
+      $( this ).addClass('is-checked');
+    });
+  });
+  
+});
+
+
+</script> 
+    	 
+
+
+</head> 
+	
+<body>
+
+
+<div id="page">
+
+	<div id="intro-container" class="display-table">
+	
+		<div class="display-table-cell">
+			<h1>Medaillenspiegel</h1>
+			<p>Olympische Sommerspiele 2016</p>
+			<p>Rio de Janeiro, Brasilien</p>
+		</div>
+		
+	</div>
+		
+		<div id="header">
+		
+				<div id="item-selectors">
+				
+					<div id="sorts" class="button-group"> 
+						<button class="button is-checked" id="original" data-sort-by="original-order">Offiziell</button>
+				  		<button class="button" data-sort-by="population" id="population">Im Verhältnis zur Einwohnerzahl</button>
+					</div>
+					
+				</div>
+			
+				<div id="table-head-wrap">
+				
+					<ul id="head">
+						<li class="item">
+							<div class="rang">Rang</div>
+							<div class="name-wrap">
+								<div class="flag flag45 blank"></div>
+								<div class="name"><h2>Land</h2></div>
+							</div>	
+							<div class="medals-wrap">	
+								<div class="med-gold">Gold</div>
+								<div class="med-silver">Silber</div>
+								<div class="med-bronze">Bronze</div>
+								<div class="med-total">Total</div>
+							</div>
+						</li>
+					</ul>
+				 
+				</div> 
+		
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="isotope">
+ 
+ 
+
+
+<ul class="vertical-list">
+
+
+<li id="usa" class="item" data-popu="6418"><div class="rang">                                             <span class="rang-orig"><strong>1</strong>.</span>                                             <span class="rang-popu display-none"><strong>32</strong>.</span>                                             <span class="rang-popu-icon display-none"><i class="material-icons">arrow_downward</i></span>                                             <span class="rang-diff display-none">-31</span>        </div><div class="name-wrap">                                             <div class="flag flag45 usa"></div><div class="name"><h2>USA</h2></div></div><div class="medals-wrap">                                             <div class="med-gold"><span>46</span></div><div class="med-silver"><span>37</span></div><div class="med-bronze"><span>38</span></div><div class="med-total"><span>121</span></div></div></li>
+<li id="gbr" class="item" data-popu="2210"><div class="rang">                                             <span class="rang-orig"><strong>2</strong>.</span>                                             <span class="rang-popu display-none"><strong>15</strong>.</span>                                             <span class="rang-popu-icon display-none"><i class="material-icons">arrow_downward</i></span>                                             <span class="rang-diff display-none">-13</span>        </div><div class="name-wrap">                                             <div class="flag flag45 gbr"></div><div class="name"><h2>Großbritannien</h2></div></div><div class="medals-wrap">                                             <div class="med-gold"><span>27</span></div><div class="med-silver"><span>23</span></div><div class="med-bronze"><span>17</span></div><div class="med-total"><span>67</span></div></div></li>
+<li id="chn" class="item" data-popu="48867"><div class="rang">                                             <span class="rang-orig"><strong>3</strong>.</span>                                             <span class="rang-popu display-none"><strong>59</strong>.</span>                                             <span class="rang-popu-icon display-none"><i class="material-icons">arrow_downward</i></span>                                             <span class="rang-diff display-none">-56</span>        </div><div class="name-wrap">                                             <div class="flag flag45 chn"></div><div class="name"><h2>China</h2></div></div><div class="medals-wrap">                                             <div class="med-gold"><span>26</span></div><div class="med-silver"><span>18</span></div><div class="med-bronze"><span>26</span></div><div class="med-total"><span>70</span></div></div></li>
+<li id="rus" class="item" data-popu="6865"><div class="rang">                                             <span class="rang-orig"><strong>4</strong>.</span>                                             <span class="rang-popu display-none"><strong>35</strong>.</span>                                             <span class="rang-popu-icon display-none"><i class="material-icons">arrow_downward</i></span>                                             <span class="rang-diff display-none">-31</span>        </div><div class="name-wrap">                                             <div class="flag flag45 rus"></div><div class="name"><h2>Russland</h2></div></div><div class="medals-wrap">                                             <div class="med-gold"><span>19</span></div><div class="med-silver"><span>18</span></div><div class="med-bronze"><span>19</span></div><div class="med-total"><span>56</span></div></div></li>
+<li id="ger" class="item" data-popu="4486"><div class="rang">                                             <span class="rang-orig"><strong>5</strong>.</span>                                             <span class="rang-popu display-none"><strong>24</strong>.</span>                                             <span class="rang-popu-icon display-none"><i class="material-icons">arrow_downward</i></span>                                             <span class="rang-diff display-none">-19</span>        </div><div class="name-wrap">                                             <div class="flag flag45 ger"></div><div class="name"><h2>Deutschland</h2></div></div><div class="medals-wrap">                                             <div class="med-gold"><span>17</span></div><div class="med-silver"><span>10</span></div><div class="med-bronze"><span>15</span></div><div class="med-total"><span>42</span></div></div></li>
+<li id="jpn" class="item" data-popu="9759"><div class="rang">                                             <span class="rang-orig"><strong>6</strong>.</span>                                             <span class="rang-popu display-none"><strong>42</strong>.</span>                                             <span class="rang-popu-icon display-none"><i class="material-icons">arrow_downward</i></span>                                             <span class="rang-diff display-none">-36</span>        </div><div class="name-wrap">                                             <div class="flag flag45 jpn"></div><div class="name"><h2>Japan</h2></div></div><div class="medals-wrap">                                             <div class="med-gold"><span>12</span></div><div class="med-silver"><span>8</span></div><div class="med-bronze"><span>21</span></div><div class="med-total"><span>41</span></div></div></li>
+<li id="fra" class="item" data-popu="5595"><div class="rang">                                             <span class="rang-orig"><strong>7</strong>.</span>                                             <span class="rang-popu display-none"><strong>30</strong>.</span>                                             <span class="rang-popu-icon display-none"><i class="material-icons">arrow_downward</i></span>                                             <span class="rang-diff display-none">-23</span>        </div><div class="name-wrap">                                             <div class="flag flag45 fra"></div><div class="name"><h2>Frankreich</h2></div></div><div class="medals-wrap">                                             <div class="med-gold"><span>10</span></div><div class="med-silver"><span>18</span></div><div class="med-bronze"><span>14</span></div><div class="med-total"><span>42</span></div></div></li>
+<li id="kor" class="item" data-popu="5391"><div class="rang">                                             <span class="rang-orig"><strong>8</strong>.</span>                                             <span class="rang-popu display-none"><strong>28</strong>.</span>                                             <span class="rang-popu-icon display-none"><i class="material-icons">arrow_downward</i></span>                                             <span class="rang-diff display-none">-20</span>        </div><div class="name-wrap">                                             <div class="flag flag45 kor"></div><div class="name"><h2>Südkorea</h2></div></div><div class="medals-wrap">                                             <div class="med-gold"><span>9</span></div><div class="med-silver"><span>3</span></div><div class="med-bronze"><span>9</span></div><div class="med-total"><span>21</span></div></div></li>
+<li id="ita" class="item" data-popu="6552"><div class="rang">                                             <span class="rang-orig"><strong>9</strong>.</span>                                             <span class="rang-popu display-none"><strong>33</strong>.</span>                                             <span class="rang-popu-icon display-none"><i class="material-icons">arrow_downward</i></span>                                             <span class="rang-diff display-none">-24</span>        </div><div class="name-wrap">                                             <div class="flag flag45 ita"></div><div class="name"><h2>Italien</h2></div></div><div class="medals-wrap">                                             <div class="med-gold"><span>8</span></div><div class="med-silver"><span>12</span></div><div class="med-bronze"><span>8</span></div><div class="med-total"><span>28</span></div></div></li>
+<li id="aus" class="item" data-popu="2585"><div class="rang">                                             <span class="rang-orig"><strong>10</strong>.</span>                                             <span class="rang-popu display-none"><strong>19</strong>.</span>                                             <span class="rang-popu-icon display-none"><i class="material-icons">arrow_downward</i></span>                                             <span class="rang-diff display-none">-9</span>        </div><div class="name-wrap">                                             <div class="flag flag45 aus"></div><div class="name"><h2>Australien</h2></div></div><div class="medals-wrap">                                             <div class="med-gold"><span>8</span></div><div class="med-silver"><span>11</span></div><div class="med-bronze"><span>10</span></div><div class="med-total"><span>29</span></div></div></li>
+<li id="ned" class="item" data-popu="1938"><div class="rang">                                             <span class="rang-orig"><strong>11</strong>.</span>                                             <span class="rang-popu display-none"><strong>12</strong>.</span>                                             <span class="rang-popu-icon display-none"><i class="material-icons">arrow_downward</i></span>                                             <span class="rang-diff display-none">-1</span>        </div><div class="name-wrap">                                             <div class="flag flag45 ned"></div><div class="name"><h2>Niederlande</h2></div></div><div class="medals-wrap">                                             <div class="med-gold"><span>8</span></div><div class="med-silver"><span>7</span></div><div class="med-bronze"><span>4</span></div><div class="med-total"><span>19</span></div></div></li>
+<li id="hun" class="item" data-popu="1180"><div class="rang">                                             <span class="rang-orig"><strong>12</strong>.</span>                                             <span class="rang-popu display-none"><strong>7</strong>.</span>                                             <span class="rang-popu-icon display-none"><i class="material-icons">arrow_upward</i></span>                                             <span class="rang-diff display-none">5</span>        </div><div class="name-wrap">                                             <div class="flag flag45 hun"></div><div class="name"><h2>Ungarn</h2></div></div><div class="medals-wrap">                                             <div class="med-gold"><span>8</span></div><div class="med-silver"><span>3</span></div><div class="med-bronze"><span>4</span></div><div class="med-total"><span>15</span></div></div></li>
+<li id="bra" class="item" data-popu="27134"><div class="rang">                                             <span class="rang-orig"><strong>13</strong>.</span>                                             <span class="rang-popu display-none"><strong>57</strong>.</span>                                             <span class="rang-popu-icon display-none"><i class="material-icons">arrow_downward</i></span>                                             <span class="rang-diff display-none">-44</span>        </div><div class="name-wrap">                                             <div class="flag flag45 bra"></div><div class="name"><h2>Brasilien</h2></div></div><div class="medals-wrap">                                             <div class="med-gold"><span>7</span></div><div class="med-silver"><span>6</span></div><div class="med-bronze"><span>6</span></div><div class="med-total"><span>19</span></div></div></li>
+<li id="esp" class="item" data-popu="6222"><div class="rang">                                             <span class="rang-orig"><strong>14</strong>.</span>                                             <span class="rang-popu display-none"><strong>31</strong>.</span>                                             <span class="rang-popu-icon display-none"><i class="material-icons">arrow_downward</i></span>                                             <span class="rang-diff display-none">-17</span>        </div><div class="name-wrap">                                             <div class="flag flag45 esp"></div><div class="name"><h2>Spanien</h2></div></div><div class="medals-wrap">                                             <div class="med-gold"><span>7</span></div><div class="med-silver"><span>4</span></div><div class="med-bronze"><span>6</span></div><div class="med-total"><span>17</span></div></div></li>
+<li id="ken" class="item" data-popu="6967"><div class="rang">                                             <span class="rang-orig"><strong>15</strong>.</span>                                             <span class="rang-popu display-none"><strong>36</strong>.</span>                                             <span class="rang-popu-icon display-none"><i class="material-icons">arrow_downward</i></span>                                             <span class="rang-diff display-none">-21</span>        </div><div class="name-wrap">                                             <div class="flag flag45 ken"></div><div class="name"><h2>Kenia</h2></div></div><div class="medals-wrap">                                             <div class="med-gold"><span>6</span></div><div class="med-silver"><span>6</span></div><div class="med-bronze"><span>1</span></div><div class="med-total"><span>13</span></div></div></li>
+<li id="jam" class="item" data-popu="431"><div class="rang">                                             <span class="rang-orig"><strong>16</strong>.</span>                                             <span class="rang-popu display-none"><strong>2</strong>.</span>                                             <span class="rang-popu-icon display-none"><i class="material-icons">arrow_upward</i></span>                                             <span class="rang-diff display-none">14</span>        </div><div class="name-wrap">                                             <div class="flag flag45 jam"></div><div class="name"><h2>Jamaika</h2></div></div><div class="medals-wrap">                                             <div class="med-gold"><span>6</span></div><div class="med-silver"><span>3</span></div><div class="med-bronze"><span>2</span></div><div class="med-total"><span>11</span></div></div></li>
+<li id="cro" class="item" data-popu="794"><div class="rang">                                             <span class="rang-orig"><strong>17</strong>.</span>                                             <span class="rang-popu display-none"><strong>3</strong>.</span>                                             <span class="rang-popu-icon display-none"><i class="material-icons">arrow_upward</i></span>                                             <span class="rang-diff display-none">14</span>        </div><div class="name-wrap">                                             <div class="flag flag45 cro"></div><div class="name"><h2>Kroatien</h2></div></div><div class="medals-wrap">                                             <div class="med-gold"><span>5</span></div><div class="med-silver"><span>3</span></div><div class="med-bronze"><span>2</span></div><div class="med-total"><span>10</span></div></div></li>
+<li id="cub" class="item" data-popu="2174"><div class="rang">                                             <span class="rang-orig"><strong>18</strong>.</span>                                             <span class="rang-popu display-none"><strong>14</strong>.</span>                                             <span class="rang-popu-icon display-none"><i class="material-icons">arrow_upward</i></span>                                             <span class="rang-diff display-none">4</span>        </div><div class="name-wrap">                                             <div class="flag flag45 cub"></div><div class="name"><h2>Kuba</h2></div></div><div class="medals-wrap">                                             <div class="med-gold"><span>5</span></div><div class="med-silver"><span>2</span></div><div class="med-bronze"><span>4</span></div><div class="med-total"><span>11</span></div></div></li>
+<li id="nzl" class="item" data-popu="928"><div class="rang">                                             <span class="rang-orig"><strong>19</strong>.</span>                                             <span class="rang-popu display-none"><strong>5</strong>.</span>                                             <span class="rang-popu-icon display-none"><i class="material-icons">arrow_upward</i></span>                                             <span class="rang-diff display-none">14</span>        </div><div class="name-wrap">                                             <div class="flag flag45 nzl"></div><div class="name"><h2>Neuseeland</h2></div></div><div class="medals-wrap">                                             <div class="med-gold"><span>4</span></div><div class="med-silver"><span>9</span></div><div class="med-bronze"><span>5</span></div><div class="med-total"><span>18</span></div></div></li>
+<li id="can" class="item" data-popu="8057"><div class="rang">                                             <span class="rang-orig"><strong>20</strong>.</span>                                             <span class="rang-popu display-none"><strong>39</strong>.</span>                                             <span class="rang-popu-icon display-none"><i class="material-icons">arrow_downward</i></span>                                             <span class="rang-diff display-none">-19</span>        </div><div class="name-wrap">                                             <div class="flag flag45 can"></div><div class="name"><h2>Kanada</h2></div></div><div class="medals-wrap">                                             <div class="med-gold"><span>4</span></div><div class="med-silver"><span>3</span></div><div class="med-bronze"><span>15</span></div><div class="med-total"><span>22</span></div></div></li>
+<li id="uzb" class="item" data-popu="7330"><div class="rang">                                             <span class="rang-orig"><strong>21</strong>.</span>                                             <span class="rang-popu display-none"><strong>37</strong>.</span>                                             <span class="rang-popu-icon display-none"><i class="material-icons">arrow_downward</i></span>                                             <span class="rang-diff display-none">-16</span>        </div><div class="name-wrap">                                             <div class="flag flag45 uzb"></div><div class="name"><h2>Usbekistan</h2></div></div><div class="medals-wrap">                                             <div class="med-gold"><span>4</span></div><div class="med-silver"><span>2</span></div><div class="med-bronze"><span>7</span></div><div class="med-total"><span>13</span></div></div></li>
+<li id="kaz" class="item" data-popu="4887"><div class="rang">                                             <span class="rang-orig"><strong>22</strong>.</span>                                             <span class="rang-popu display-none"><strong>25</strong>.</span>                                             <span class="rang-popu-icon display-none"><i class="material-icons">arrow_downward</i></span>                                             <span class="rang-diff display-none">-3</span>        </div><div class="name-wrap">                                             <div class="flag flag45 kaz"></div><div class="name"><h2>Kasachstan</h2></div></div><div class="medals-wrap">                                             <div class="med-gold"><span>3</span></div><div class="med-silver"><span>5</span></div><div class="med-bronze"><span>9</span></div><div class="med-total"><span>17</span></div></div></li>
+<li id="col" class="item" data-popu="14931"><div class="rang">                                             <span class="rang-orig"><strong>23</strong>.</span>                                             <span class="rang-popu display-none"><strong>45</strong>.</span>                                             <span class="rang-popu-icon display-none"><i class="material-icons">arrow_downward</i></span>                                             <span class="rang-diff display-none">-22</span>        </div><div class="name-wrap">                                             <div class="flag flag45 col"></div><div class="name"><h2>Kolumbien</h2></div></div><div class="medals-wrap">                                             <div class="med-gold"><span>3</span></div><div class="med-silver"><span>2</span></div><div class="med-bronze"><span>3</span></div><div class="med-total"><span>8</span></div></div></li>
+<li id="sui" class="item" data-popu="2574"><div class="rang">                                             <span class="rang-orig"><strong>24</strong>.</span>                                             <span class="rang-popu display-none"><strong>18</strong>.</span>                                             <span class="rang-popu-icon display-none"><i class="material-icons">arrow_upward</i></span>                                             <span class="rang-diff display-none">6</span>        </div><div class="name-wrap">                                             <div class="flag flag45 sui"></div><div class="name"><h2>Schweiz</h2></div></div><div class="medals-wrap">                                             <div class="med-gold"><span>3</span></div><div class="med-silver"><span>2</span></div><div class="med-bronze"><span>2</span></div><div class="med-total"><span>7</span></div></div></li>
+<li id="iri" class="item" data-popu="25194"><div class="rang">                                             <span class="rang-orig"><strong>25</strong>.</span>                                             <span class="rang-popu display-none"><strong>55</strong>.</span>                                             <span class="rang-popu-icon display-none"><i class="material-icons">arrow_downward</i></span>                                             <span class="rang-diff display-none">-30</span>        </div><div class="name-wrap">                                             <div class="flag flag45 iri"></div><div class="name"><h2>Iran</h2></div></div><div class="medals-wrap">                                             <div class="med-gold"><span>3</span></div><div class="med-silver"><span>1</span></div><div class="med-bronze"><span>4</span></div><div class="med-total"><span>8</span></div></div></li>
+<li id="gre" class="item" data-popu="3469"><div class="rang">                                             <span class="rang-orig"><strong>26</strong>.</span>                                             <span class="rang-popu display-none"><strong>21</strong>.</span>                                             <span class="rang-popu-icon display-none"><i class="material-icons">arrow_upward</i></span>                                             <span class="rang-diff display-none">5</span>        </div><div class="name-wrap">                                             <div class="flag flag45 gre"></div><div class="name"><h2>Griechenland</h2></div></div><div class="medals-wrap">                                             <div class="med-gold"><span>3</span></div><div class="med-silver"><span>1</span></div><div class="med-bronze"><span>2</span></div><div class="med-total"><span>6</span></div></div></li>
+<li id="arg" class="item" data-popu="14005"><div class="rang">                                             <span class="rang-orig"><strong>27</strong>.</span>                                             <span class="rang-popu display-none"><strong>44</strong>.</span>                                             <span class="rang-popu-icon display-none"><i class="material-icons">arrow_downward</i></span>                                             <span class="rang-diff display-none">-17</span>        </div><div class="name-wrap">                                             <div class="flag flag45 arg"></div><div class="name"><h2>Argentinien</h2></div></div><div class="medals-wrap">                                             <div class="med-gold"><span>3</span></div><div class="med-silver"><span>1</span></div><div class="med-bronze"><span>0</span></div><div class="med-total"><span>4</span></div></div></li>
+<li id="den" class="item" data-popu="2126"><div class="rang">                                             <span class="rang-orig"><strong>28</strong>.</span>                                             <span class="rang-popu display-none"><strong>13</strong>.</span>                                             <span class="rang-popu-icon display-none"><i class="material-icons">arrow_upward</i></span>                                             <span class="rang-diff display-none">15</span>        </div><div class="name-wrap">                                             <div class="flag flag45 den"></div><div class="name"><h2>Dänemark</h2></div></div><div class="medals-wrap">                                             <div class="med-gold"><span>2</span></div><div class="med-silver"><span>6</span></div><div class="med-bronze"><span>7</span></div><div class="med-total"><span>15</span></div></div></li>
+<li id="swe" class="item" data-popu="3726"><div class="rang">                                             <span class="rang-orig"><strong>29</strong>.</span>                                             <span class="rang-popu display-none"><strong>23</strong>.</span>                                             <span class="rang-popu-icon display-none"><i class="material-icons">arrow_upward</i></span>                                             <span class="rang-diff display-none">6</span>        </div><div class="name-wrap">                                             <div class="flag flag45 swe"></div><div class="name"><h2>Schweden</h2></div></div><div class="medals-wrap">                                             <div class="med-gold"><span>2</span></div><div class="med-silver"><span>6</span></div><div class="med-bronze"><span>3</span></div><div class="med-total"><span>11</span></div></div></li>
+<li id="rsa" class="item" data-popu="20976"><div class="rang">                                             <span class="rang-orig"><strong>30</strong>.</span>                                             <span class="rang-popu display-none"><strong>49</strong>.</span>                                             <span class="rang-popu-icon display-none"><i class="material-icons">arrow_downward</i></span>                                             <span class="rang-diff display-none">-19</span>        </div><div class="name-wrap">                                             <div class="flag flag45 rsa"></div><div class="name"><h2>Südafrika</h2></div></div><div class="medals-wrap">                                             <div class="med-gold"><span>2</span></div><div class="med-silver"><span>6</span></div><div class="med-bronze"><span>2</span></div><div class="med-total"><span>10</span></div></div></li>
+<li id="ukr" class="item" data-popu="17795"><div class="rang">                                             <span class="rang-orig"><strong>31</strong>.</span>                                             <span class="rang-popu display-none"><strong>48</strong>.</span>                                             <span class="rang-popu-icon display-none"><i class="material-icons">arrow_downward</i></span>                                             <span class="rang-diff display-none">-17</span>        </div><div class="name-wrap">                                             <div class="flag flag45 ukr"></div><div class="name"><h2>Ukraine</h2></div></div><div class="medals-wrap">                                             <div class="med-gold"><span>2</span></div><div class="med-silver"><span>5</span></div><div class="med-bronze"><span>4</span></div><div class="med-total"><span>11</span></div></div></li>
+<li id="srb" class="item" data-popu="2933"><div class="rang">                                             <span class="rang-orig"><strong>32</strong>.</span>                                             <span class="rang-popu display-none"><strong>20</strong>.</span>                                             <span class="rang-popu-icon display-none"><i class="material-icons">arrow_upward</i></span>                                             <span class="rang-diff display-none">12</span>        </div><div class="name-wrap">                                             <div class="flag flag45 srb"></div><div class="name"><h2>Serbien</h2></div></div><div class="medals-wrap">                                             <div class="med-gold"><span>2</span></div><div class="med-silver"><span>4</span></div><div class="med-bronze"><span>2</span></div><div class="med-total"><span>8</span></div></div></li>
+<li id="pol" class="item" data-popu="16101"><div class="rang">                                             <span class="rang-orig"><strong>33</strong>.</span>                                             <span class="rang-popu display-none"><strong>46</strong>.</span>                                             <span class="rang-popu-icon display-none"><i class="material-icons">arrow_downward</i></span>                                             <span class="rang-diff display-none">-13</span>        </div><div class="name-wrap">                                             <div class="flag flag45 pol"></div><div class="name"><h2>Polen</h2></div></div><div class="medals-wrap">                                             <div class="med-gold"><span>2</span></div><div class="med-silver"><span>3</span></div><div class="med-bronze"><span>6</span></div><div class="med-total"><span>11</span></div></div></li>
+<li id="prk" class="item" data-popu="10843"><div class="rang">                                             <span class="rang-orig"><strong>34</strong>.</span>                                             <span class="rang-popu display-none"><strong>43</strong>.</span>                                             <span class="rang-popu-icon display-none"><i class="material-icons">arrow_downward</i></span>                                             <span class="rang-diff display-none">-9</span>        </div><div class="name-wrap">                                             <div class="flag flag45 prk"></div><div class="name"><h2>Nordkorea</h2></div></div><div class="medals-wrap">                                             <div class="med-gold"><span>2</span></div><div class="med-silver"><span>3</span></div><div class="med-bronze"><span>2</span></div><div class="med-total"><span>7</span></div></div></li>
+<li id="bel" class="item" data-popu="5084"><div class="rang">                                             <span class="rang-orig"><strong>35</strong>.</span>                                             <span class="rang-popu display-none"><strong>26</strong>.</span>                                             <span class="rang-popu-icon display-none"><i class="material-icons">arrow_upward</i></span>                                             <span class="rang-diff display-none">9</span>        </div><div class="name-wrap">                                             <div class="flag flag45 bel"></div><div class="name"><h2>Belgien</h2></div></div><div class="medals-wrap">                                             <div class="med-gold"><span>2</span></div><div class="med-silver"><span>2</span></div><div class="med-bronze"><span>2</span></div><div class="med-total"><span>6</span></div></div></li>
+<li id="tha" class="item" data-popu="30612"><div class="rang">                                             <span class="rang-orig"><strong>35</strong>.</span>                                             <span class="rang-popu display-none"><strong>58</strong>.</span>                                             <span class="rang-popu-icon display-none"><i class="material-icons">arrow_downward</i></span>                                             <span class="rang-diff display-none">-23</span>        </div><div class="name-wrap">                                             <div class="flag flag45 tha"></div><div class="name"><h2>Thailand</h2></div></div><div class="medals-wrap">                                             <div class="med-gold"><span>2</span></div><div class="med-silver"><span>2</span></div><div class="med-bronze"><span>2</span></div><div class="med-total"><span>6</span></div></div></li>
+<li id="svk" class="item" data-popu="2465"><div class="rang">                                             <span class="rang-orig"><strong>37</strong>.</span>                                             <span class="rang-popu display-none"><strong>17</strong>.</span>                                             <span class="rang-popu-icon display-none"><i class="material-icons">arrow_upward</i></span>                                             <span class="rang-diff display-none">20</span>        </div><div class="name-wrap">                                             <div class="flag flag45 svk"></div><div class="name"><h2>Slowakei</h2></div></div><div class="medals-wrap">                                             <div class="med-gold"><span>2</span></div><div class="med-silver"><span>2</span></div><div class="med-bronze"><span>0</span></div><div class="med-total"><span>4</span></div></div></li>
+<li id="geo" class="item" data-popu="1719"><div class="rang">                                             <span class="rang-orig"><strong>38</strong>.</span>                                             <span class="rang-popu display-none"><strong>10</strong>.</span>                                             <span class="rang-popu-icon display-none"><i class="material-icons">arrow_upward</i></span>                                             <span class="rang-diff display-none">28</span>        </div><div class="name-wrap">                                             <div class="flag flag45 geo"></div><div class="name"><h2>Georgien</h2></div></div><div class="medals-wrap">                                             <div class="med-gold"><span>2</span></div><div class="med-silver"><span>1</span></div><div class="med-bronze"><span>4</span></div><div class="med-total"><span>7</span></div></div></li>
+<li id="aze" class="item" data-popu="5362"><div class="rang">                                             <span class="rang-orig"><strong>39</strong>.</span>                                             <span class="rang-popu display-none"><strong>27</strong>.</span>                                             <span class="rang-popu-icon display-none"><i class="material-icons">arrow_upward</i></span>                                             <span class="rang-diff display-none">12</span>        </div><div class="name-wrap">                                             <div class="flag flag45 aze"></div><div class="name"><h2>Aserbaidschan</h2></div></div><div class="medals-wrap">                                             <div class="med-gold"><span>1</span></div><div class="med-silver"><span>7</span></div><div class="med-bronze"><span>10</span></div><div class="med-total"><span>18</span></div></div></li>
+<li id="blr" class="item" data-popu="6606"><div class="rang">                                             <span class="rang-orig"><strong>40</strong>.</span>                                             <span class="rang-popu display-none"><strong>34</strong>.</span>                                             <span class="rang-popu-icon display-none"><i class="material-icons">arrow_upward</i></span>                                             <span class="rang-diff display-none">6</span>        </div><div class="name-wrap">                                             <div class="flag flag45 blr"></div><div class="name"><h2>Belarus</h2></div></div><div class="medals-wrap">                                             <div class="med-gold"><span>1</span></div><div class="med-silver"><span>4</span></div><div class="med-bronze"><span>4</span></div><div class="med-total"><span>9</span></div></div></li>
+<li id="tur" class="item" data-popu="58706"><div class="rang">                                             <span class="rang-orig"><strong>41</strong>.</span>                                             <span class="rang-popu display-none"><strong>60</strong>.</span>                                             <span class="rang-popu-icon display-none"><i class="material-icons">arrow_downward</i></span>                                             <span class="rang-diff display-none">-19</span>        </div><div class="name-wrap">                                             <div class="flag flag45 tur"></div><div class="name"><h2>Türkei</h2></div></div><div class="medals-wrap">                                             <div class="med-gold"><span>1</span></div><div class="med-silver"><span>3</span></div><div class="med-bronze"><span>4</span></div><div class="med-total"><span>8</span></div></div></li>
+<li id="arm" class="item" data-popu="2321"><div class="rang">                                             <span class="rang-orig"><strong>42</strong>.</span>                                             <span class="rang-popu display-none"><strong>16</strong>.</span>                                             <span class="rang-popu-icon display-none"><i class="material-icons">arrow_upward</i></span>                                             <span class="rang-diff display-none">26</span>        </div><div class="name-wrap">                                             <div class="flag flag45 arm"></div><div class="name"><h2>Armenien</h2></div></div><div class="medals-wrap">                                             <div class="med-gold"><span>1</span></div><div class="med-silver"><span>3</span></div><div class="med-bronze"><span>0</span></div><div class="med-total"><span>4</span></div></div></li>
+<li id="cze" class="item" data-popu="8308"><div class="rang">                                             <span class="rang-orig"><strong>43</strong>.</span>                                             <span class="rang-popu display-none"><strong>40</strong>.</span>                                             <span class="rang-popu-icon display-none"><i class="material-icons">arrow_upward</i></span>                                             <span class="rang-diff display-none">3</span>        </div><div class="name-wrap">                                             <div class="flag flag45 cze"></div><div class="name"><h2>Tschechien</h2></div></div><div class="medals-wrap">                                             <div class="med-gold"><span>1</span></div><div class="med-silver"><span>2</span></div><div class="med-bronze"><span>7</span></div><div class="med-total"><span>10</span></div></div></li>
+<li id="eth" class="item" data-popu="79513"><div class="rang">                                             <span class="rang-orig"><strong>44</strong>.</span>                                             <span class="rang-popu display-none"><strong>63</strong>.</span>                                             <span class="rang-popu-icon display-none"><i class="material-icons">arrow_downward</i></span>                                             <span class="rang-diff display-none">-19</span>        </div><div class="name-wrap">                                             <div class="flag flag45 eth"></div><div class="name"><h2>Äthiopien</h2></div></div><div class="medals-wrap">                                             <div class="med-gold"><span>1</span></div><div class="med-silver"><span>2</span></div><div class="med-bronze"><span>5</span></div><div class="med-total"><span>8</span></div></div></li>
+<li id="slo" class="item" data-popu="1706"><div class="rang">                                             <span class="rang-orig"><strong>45</strong>.</span>                                             <span class="rang-popu display-none"><strong>9</strong>.</span>                                             <span class="rang-popu-icon display-none"><i class="material-icons">arrow_upward</i></span>                                             <span class="rang-diff display-none">36</span>        </div><div class="name-wrap">                                             <div class="flag flag45 slo"></div><div class="name"><h2>Slowenien</h2></div></div><div class="medals-wrap">                                             <div class="med-gold"><span>1</span></div><div class="med-silver"><span>2</span></div><div class="med-bronze"><span>1</span></div><div class="med-total"><span>4</span></div></div></li>
+<li id="ina" class="item" data-popu="214637"><div class="rang">                                             <span class="rang-orig"><strong>46</strong>.</span>                                             <span class="rang-popu display-none"><strong>71</strong>.</span>                                             <span class="rang-popu-icon display-none"><i class="material-icons">arrow_downward</i></span>                                             <span class="rang-diff display-none">-25</span>        </div><div class="name-wrap">                                             <div class="flag flag45 ina"></div><div class="name"><h2>Indonesien</h2></div></div><div class="medals-wrap">                                             <div class="med-gold"><span>1</span></div><div class="med-silver"><span>2</span></div><div class="med-bronze"><span>0</span></div><div class="med-total"><span>3</span></div></div></li>
+<li id="rou" class="item" data-popu="17551"><div class="rang">                                             <span class="rang-orig"><strong>47</strong>.</span>                                             <span class="rang-popu display-none"><strong>47</strong>.</span>                                             <span class="rang-popu-icon display-none"><i class="material-icons">arrow_forward</i></span>                                             <span class="rang-diff display-none">0</span>        </div><div class="name-wrap">                                             <div class="flag flag45 rou"></div><div class="name"><h2>Rumänien</h2></div></div><div class="medals-wrap">                                             <div class="med-gold"><span>1</span></div><div class="med-silver"><span>1</span></div><div class="med-bronze"><span>3</span></div><div class="med-total"><span>5</span></div></div></li>
+<li id="brn" class="item" data-popu="1252"><div class="rang">                                             <span class="rang-orig"><strong>48</strong>.</span>                                             <span class="rang-popu display-none"><strong>8</strong>.</span>                                             <span class="rang-popu-icon display-none"><i class="material-icons">arrow_upward</i></span>                                             <span class="rang-diff display-none">40</span>        </div><div class="name-wrap">                                             <div class="flag flag45 brn"></div><div class="name"><h2>Bahrain</h2></div></div><div class="medals-wrap">                                             <div class="med-gold"><span>1</span></div><div class="med-silver"><span>1</span></div><div class="med-bronze"><span>0</span></div><div class="med-total"><span>2</span></div></div></li>
+<li id="vie" class="item" data-popu="83367"><div class="rang">                                             <span class="rang-orig"><strong>48</strong>.</span>                                             <span class="rang-popu display-none"><strong>64</strong>.</span>                                             <span class="rang-popu-icon display-none"><i class="material-icons">arrow_downward</i></span>                                             <span class="rang-diff display-none">-16</span>        </div><div class="name-wrap">                                             <div class="flag flag45 vie"></div><div class="name"><h2>Vietnam</h2></div></div><div class="medals-wrap">                                             <div class="med-gold"><span>1</span></div><div class="med-silver"><span>1</span></div><div class="med-bronze"><span>0</span></div><div class="med-total"><span>2</span></div></div></li>
+<li id="tpe" class="item" data-popu="22909"><div class="rang">                                             <span class="rang-orig"><strong>50</strong>.</span>                                             <span class="rang-popu display-none"><strong>53</strong>.</span>                                             <span class="rang-popu-icon display-none"><i class="material-icons">arrow_downward</i></span>                                             <span class="rang-diff display-none">-3</span>        </div><div class="name-wrap">                                             <div class="flag flag45 tpe"></div><div class="name"><h2>Taiwan</h2></div></div><div class="medals-wrap">                                             <div class="med-gold"><span>1</span></div><div class="med-silver"><span>0</span></div><div class="med-bronze"><span>2</span></div><div class="med-total"><span>3</span></div></div></li>
+<li id="bah" class="item" data-popu="384"><div class="rang">                                             <span class="rang-orig"><strong>51</strong>.</span>                                             <span class="rang-popu display-none"><strong>1</strong>.</span>                                             <span class="rang-popu-icon display-none"><i class="material-icons">arrow_upward</i></span>                                             <span class="rang-diff display-none">50</span>        </div><div class="name-wrap">                                             <div class="flag flag45 bah"></div><div class="name"><h2>Bahamas</h2></div></div><div class="medals-wrap">                                             <div class="med-gold"><span>1</span></div><div class="med-silver"><span>0</span></div><div class="med-bronze"><span>1</span></div><div class="med-total"><span>2</span></div></div></li>
+<li id="civ" class="item" data-popu="22477"><div class="rang">                                             <span class="rang-orig"><strong>51</strong>.</span>                                             <span class="rang-popu display-none"><strong>52</strong>.</span>                                             <span class="rang-popu-icon display-none"><i class="material-icons">arrow_downward</i></span>                                             <span class="rang-diff display-none">-1</span>        </div><div class="name-wrap">                                             <div class="flag flag45 civ"></div><div class="name"><h2>Elfenbeinküste</h2></div></div><div class="medals-wrap">                                             <div class="med-gold"><span>1</span></div><div class="med-silver"><span>0</span></div><div class="med-bronze"><span>1</span></div><div class="med-total"><span>2</span></div></div></li>
+<li id="fij" class="item" data-popu="892"><div class="rang">                                             <span class="rang-orig"><strong>54</strong>.</span>                                             <span class="rang-popu display-none"><strong>4</strong>.</span>                                             <span class="rang-popu-icon display-none"><i class="material-icons">arrow_upward</i></span>                                             <span class="rang-diff display-none">50</span>        </div><div class="name-wrap">                                             <div class="flag flag45 fij"></div><div class="name"><h2>Fidschi</h2></div></div><div class="medals-wrap">                                             <div class="med-gold"><span>1</span></div><div class="med-silver"><span>0</span></div><div class="med-bronze"><span>0</span></div><div class="med-total"><span>1</span></div></div></li>
+<li id="jor" class="item" data-popu="7595"><div class="rang">                                             <span class="rang-orig"><strong>54</strong>.</span>                                             <span class="rang-popu display-none"><strong>38</strong>.</span>                                             <span class="rang-popu-icon display-none"><i class="material-icons">arrow_upward</i></span>                                             <span class="rang-diff display-none">16</span>        </div><div class="name-wrap">                                             <div class="flag flag45 jor"></div><div class="name"><h2>Jordanien</h2></div></div><div class="medals-wrap">                                             <div class="med-gold"><span>1</span></div><div class="med-silver"><span>0</span></div><div class="med-bronze"><span>0</span></div><div class="med-total"><span>1</span></div></div></li>
+<li id="sin" class="item" data-popu="5535"><div class="rang">                                             <span class="rang-orig"><strong>54</strong>.</span>                                             <span class="rang-popu display-none"><strong>29</strong>.</span>                                             <span class="rang-popu-icon display-none"><i class="material-icons">arrow_upward</i></span>                                             <span class="rang-diff display-none">25</span>        </div><div class="name-wrap">                                             <div class="flag flag45 sin"></div><div class="name"><h2>Singapur</h2></div></div><div class="medals-wrap">                                             <div class="med-gold"><span>1</span></div><div class="med-silver"><span>0</span></div><div class="med-bronze"><span>0</span></div><div class="med-total"><span>1</span></div></div></li>
+<li id="tjk" class="item" data-popu="8482"><div class="rang">                                             <span class="rang-orig"><strong>54</strong>.</span>                                             <span class="rang-popu display-none"><strong>41</strong>.</span>                                             <span class="rang-popu-icon display-none"><i class="material-icons">arrow_upward</i></span>                                             <span class="rang-diff display-none">13</span>        </div><div class="name-wrap">                                             <div class="flag flag45 tjk"></div><div class="name"><h2>Tadschikistan</h2></div></div><div class="medals-wrap">                                             <div class="med-gold"><span>1</span></div><div class="med-silver"><span>0</span></div><div class="med-bronze"><span>0</span></div><div class="med-total"><span>1</span></div></div></li>
+<li id="kos" class="item" data-popu="1797"><div class="rang">                                             <span class="rang-orig"><strong>54</strong>.</span>                                             <span class="rang-popu display-none"><strong>11</strong>.</span>                                             <span class="rang-popu-icon display-none"><i class="material-icons">arrow_upward</i></span>                                             <span class="rang-diff display-none">43</span>        </div><div class="name-wrap">                                             <div class="flag flag45 kos"></div><div class="name"><h2>Kosovo</h2></div></div><div class="medals-wrap">                                             <div class="med-gold"><span>1</span></div><div class="med-silver"><span>0</span></div><div class="med-bronze"><span>0</span></div><div class="med-total"><span>1</span></div></div></li>
+<li id="pur" class="item" data-popu="3474"><div class="rang">                                             <span class="rang-orig"><strong>54</strong>.</span>                                             <span class="rang-popu display-none"><strong>22</strong>.</span>                                             <span class="rang-popu-icon display-none"><i class="material-icons">arrow_upward</i></span>                                             <span class="rang-diff display-none">32</span>        </div><div class="name-wrap">                                             <div class="flag flag45 pur"></div><div class="name"><h2>Puerto Rico</h2></div></div><div class="medals-wrap">                                             <div class="med-gold"><span>1</span></div><div class="med-silver"><span>0</span></div><div class="med-bronze"><span>0</span></div><div class="med-total"><span>1</span></div></div></li>
+<li id="mas" class="item" data-popu="73978"><div class="rang">                                             <span class="rang-orig"><strong>60</strong>.</span>                                             <span class="rang-popu display-none"><strong>62</strong>.</span>                                             <span class="rang-popu-icon display-none"><i class="material-icons">arrow_downward</i></span>                                             <span class="rang-diff display-none">-2</span>        </div><div class="name-wrap">                                             <div class="flag flag45 mas"></div><div class="name"><h2>Malaysia</h2></div></div><div class="medals-wrap">                                             <div class="med-gold"><span>0</span></div><div class="med-silver"><span>4</span></div><div class="med-bronze"><span>1</span></div><div class="med-total"><span>5</span></div></div></li>
+<li id="mex" class="item" data-popu="396929"><div class="rang">                                             <span class="rang-orig"><strong>61</strong>.</span>                                             <span class="rang-popu display-none"><strong>75</strong>.</span>                                             <span class="rang-popu-icon display-none"><i class="material-icons">arrow_downward</i></span>                                             <span class="rang-diff display-none">-14</span>        </div><div class="name-wrap">                                             <div class="flag flag45 mex"></div><div class="name"><h2>Mexiko</h2></div></div><div class="medals-wrap">                                             <div class="med-gold"><span>0</span></div><div class="med-silver"><span>3</span></div><div class="med-bronze"><span>2</span></div><div class="med-total"><span>5</span></div></div></li>
+<li id="alg" class="item" data-popu="198333"><div class="rang">                                             <span class="rang-orig"><strong>62</strong>.</span>                                             <span class="rang-popu display-none"><strong>69</strong>.</span>                                             <span class="rang-popu-icon display-none"><i class="material-icons">arrow_downward</i></span>                                             <span class="rang-diff display-none">-7</span>        </div><div class="name-wrap">                                             <div class="flag flag45 alg"></div><div class="name"><h2>Algerien</h2></div></div><div class="medals-wrap">                                             <div class="med-gold"><span>0</span></div><div class="med-silver"><span>2</span></div><div class="med-bronze"><span>0</span></div><div class="med-total"><span>2</span></div></div></li>
+<li id="irl" class="item" data-popu="23204"><div class="rang">                                             <span class="rang-orig"><strong>62</strong>.</span>                                             <span class="rang-popu display-none"><strong>54</strong>.</span>                                             <span class="rang-popu-icon display-none"><i class="material-icons">arrow_upward</i></span>                                             <span class="rang-diff display-none">8</span>        </div><div class="name-wrap">                                             <div class="flag flag45 irl"></div><div class="name"><h2>Irland</h2></div></div><div class="medals-wrap">                                             <div class="med-gold"><span>0</span></div><div class="med-silver"><span>2</span></div><div class="med-bronze"><span>0</span></div><div class="med-total"><span>2</span></div></div></li>
+<li id="ltu" class="item" data-popu="22386"><div class="rang">                                             <span class="rang-orig"><strong>64</strong>.</span>                                             <span class="rang-popu display-none"><strong>51</strong>.</span>                                             <span class="rang-popu-icon display-none"><i class="material-icons">arrow_upward</i></span>                                             <span class="rang-diff display-none">13</span>        </div><div class="name-wrap">                                             <div class="flag flag45 ltu"></div><div class="name"><h2>Litauen</h2></div></div><div class="medals-wrap">                                             <div class="med-gold"><span>0</span></div><div class="med-silver"><span>1</span></div><div class="med-bronze"><span>3</span></div><div class="med-total"><span>4</span></div></div></li>
+<li id="bul" class="item" data-popu="59817"><div class="rang">                                             <span class="rang-orig"><strong>65</strong>.</span>                                             <span class="rang-popu display-none"><strong>61</strong>.</span>                                             <span class="rang-popu-icon display-none"><i class="material-icons">arrow_upward</i></span>                                             <span class="rang-diff display-none">4</span>        </div><div class="name-wrap">                                             <div class="flag flag45 bul"></div><div class="name"><h2>Bulgarien</h2></div></div><div class="medals-wrap">                                             <div class="med-gold"><span>0</span></div><div class="med-silver"><span>1</span></div><div class="med-bronze"><span>2</span></div><div class="med-total"><span>3</span></div></div></li>
+<li id="ven" class="item" data-popu="259234"><div class="rang">                                             <span class="rang-orig"><strong>65</strong>.</span>                                             <span class="rang-popu display-none"><strong>72</strong>.</span>                                             <span class="rang-popu-icon display-none"><i class="material-icons">arrow_downward</i></span>                                             <span class="rang-diff display-none">-7</span>        </div><div class="name-wrap">                                             <div class="flag flag45 ven"></div><div class="name"><h2>Venezuela</h2></div></div><div class="medals-wrap">                                             <div class="med-gold"><span>0</span></div><div class="med-silver"><span>1</span></div><div class="med-bronze"><span>2</span></div><div class="med-total"><span>3</span></div></div></li>
+<li id="ind" class="item" data-popu="11918641"><div class="rang">                                             <span class="rang-orig"><strong>67</strong>.</span>                                             <span class="rang-popu display-none"><strong>85</strong>.</span>                                             <span class="rang-popu-icon display-none"><i class="material-icons">arrow_downward</i></span>                                             <span class="rang-diff display-none">-18</span>        </div><div class="name-wrap">                                             <div class="flag flag45 ind"></div><div class="name"><h2>Indien</h2></div></div><div class="medals-wrap">                                             <div class="med-gold"><span>0</span></div><div class="med-silver"><span>1</span></div><div class="med-bronze"><span>1</span></div><div class="med-total"><span>2</span></div></div></li>
+<li id="mgl" class="item" data-popu="26901"><div class="rang">                                             <span class="rang-orig"><strong>67</strong>.</span>                                             <span class="rang-popu display-none"><strong>56</strong>.</span>                                             <span class="rang-popu-icon display-none"><i class="material-icons">arrow_upward</i></span>                                             <span class="rang-diff display-none">11</span>        </div><div class="name-wrap">                                             <div class="flag flag45 mgl"></div><div class="name"><h2>Mongolei</h2></div></div><div class="medals-wrap">                                             <div class="med-gold"><span>0</span></div><div class="med-silver"><span>1</span></div><div class="med-bronze"><span>1</span></div><div class="med-total"><span>2</span></div></div></li>
+<li id="bdi" class="item" data-popu="111789"><div class="rang">                                             <span class="rang-orig"><strong>69</strong>.</span>                                             <span class="rang-popu display-none"><strong>65</strong>.</span>                                             <span class="rang-popu-icon display-none"><i class="material-icons">arrow_upward</i></span>                                             <span class="rang-diff display-none">4</span>        </div><div class="name-wrap">                                             <div class="flag flag45 bdi"></div><div class="name"><h2>Burundi</h2></div></div><div class="medals-wrap">                                             <div class="med-gold"><span>0</span></div><div class="med-silver"><span>1</span></div><div class="med-bronze"><span>0</span></div><div class="med-total"><span>1</span></div></div></li>
+<li id="grn" class="item" data-popu="1068"><div class="rang">                                             <span class="rang-orig"><strong>69</strong>.</span>                                             <span class="rang-popu display-none"><strong>6</strong>.</span>                                             <span class="rang-popu-icon display-none"><i class="material-icons">arrow_upward</i></span>                                             <span class="rang-diff display-none">63</span>        </div><div class="name-wrap">                                             <div class="flag flag45 grn"></div><div class="name"><h2>Grenada</h2></div></div><div class="medals-wrap">                                             <div class="med-gold"><span>0</span></div><div class="med-silver"><span>1</span></div><div class="med-bronze"><span>0</span></div><div class="med-total"><span>1</span></div></div></li>
+<li id="qat" class="item" data-popu="22354"><div class="rang">                                             <span class="rang-orig"><strong>69</strong>.</span>                                             <span class="rang-popu display-none"><strong>50</strong>.</span>                                             <span class="rang-popu-icon display-none"><i class="material-icons">arrow_upward</i></span>                                             <span class="rang-diff display-none">19</span>        </div><div class="name-wrap">                                             <div class="flag flag45 qat"></div><div class="name"><h2>Katar</h2></div></div><div class="medals-wrap">                                             <div class="med-gold"><span>0</span></div><div class="med-silver"><span>1</span></div><div class="med-bronze"><span>0</span></div><div class="med-total"><span>1</span></div></div></li>
+<li id="nig" class="item" data-popu="198991"><div class="rang">                                             <span class="rang-orig"><strong>69</strong>.</span>                                             <span class="rang-popu display-none"><strong>70</strong>.</span>                                             <span class="rang-popu-icon display-none"><i class="material-icons">arrow_downward</i></span>                                             <span class="rang-diff display-none">-1</span>        </div><div class="name-wrap">                                             <div class="flag flag45 nig"></div><div class="name"><h2>Niger</h2></div></div><div class="medals-wrap">                                             <div class="med-gold"><span>0</span></div><div class="med-silver"><span>1</span></div><div class="med-bronze"><span>0</span></div><div class="med-total"><span>1</span></div></div></li>
+<li id="phi" class="item" data-popu="1006994"><div class="rang">                                             <span class="rang-orig"><strong>69</strong>.</span>                                             <span class="rang-popu display-none"><strong>80</strong>.</span>                                             <span class="rang-popu-icon display-none"><i class="material-icons">arrow_downward</i></span>                                             <span class="rang-diff display-none">-11</span>        </div><div class="name-wrap">                                             <div class="flag flag45 phi"></div><div class="name"><h2>Philippinen</h2></div></div><div class="medals-wrap">                                             <div class="med-gold"><span>0</span></div><div class="med-silver"><span>1</span></div><div class="med-bronze"><span>0</span></div><div class="med-total"><span>1</span></div></div></li>
+<li id="nor" class="item" data-popu="129898"><div class="rang">                                             <span class="rang-orig"><strong>74</strong>.</span>                                             <span class="rang-popu display-none"><strong>66</strong>.</span>                                             <span class="rang-popu-icon display-none"><i class="material-icons">arrow_upward</i></span>                                             <span class="rang-diff display-none">8</span>        </div><div class="name-wrap">                                             <div class="flag flag45 nor"></div><div class="name"><h2>Norwegen</h2></div></div><div class="medals-wrap">                                             <div class="med-gold"><span>0</span></div><div class="med-silver"><span>0</span></div><div class="med-bronze"><span>4</span></div><div class="med-total"><span>4</span></div></div></li>
+<li id="egy" class="item" data-popu="3050269"><div class="rang">                                             <span class="rang-orig"><strong>75</strong>.</span>                                             <span class="rang-popu display-none"><strong>83</strong>.</span>                                             <span class="rang-popu-icon display-none"><i class="material-icons">arrow_downward</i></span>                                             <span class="rang-diff display-none">-8</span>        </div><div class="name-wrap">                                             <div class="flag flag45 egy"></div><div class="name"><h2>Ägypten</h2></div></div><div class="medals-wrap">                                             <div class="med-gold"><span>0</span></div><div class="med-silver"><span>0</span></div><div class="med-bronze"><span>3</span></div><div class="med-total"><span>3</span></div></div></li>
+<li id="tun" class="item" data-popu="370260"><div class="rang">                                             <span class="rang-orig"><strong>75</strong>.</span>                                             <span class="rang-popu display-none"><strong>74</strong>.</span>                                             <span class="rang-popu-icon display-none"><i class="material-icons">arrow_upward</i></span>                                             <span class="rang-diff display-none">1</span>        </div><div class="name-wrap">                                             <div class="flag flag45 tun"></div><div class="name"><h2>Tunesien</h2></div></div><div class="medals-wrap">                                             <div class="med-gold"><span>0</span></div><div class="med-silver"><span>0</span></div><div class="med-bronze"><span>3</span></div><div class="med-total"><span>3</span></div></div></li>
+<li id="isr" class="item" data-popu="419020"><div class="rang">                                             <span class="rang-orig"><strong>77</strong>.</span>                                             <span class="rang-popu display-none"><strong>76</strong>.</span>                                             <span class="rang-popu-icon display-none"><i class="material-icons">arrow_upward</i></span>                                             <span class="rang-diff display-none">1</span>        </div><div class="name-wrap">                                             <div class="flag flag45 isr"></div><div class="name"><h2>Israel</h2></div></div><div class="medals-wrap">                                             <div class="med-gold"><span>0</span></div><div class="med-silver"><span>0</span></div><div class="med-bronze"><span>2</span></div><div class="med-total"><span>2</span></div></div></li>
+<li id="dom" class="item" data-popu="1052839"><div class="rang">                                             <span class="rang-orig"><strong>78</strong>.</span>                                             <span class="rang-popu display-none"><strong>82</strong>.</span>                                             <span class="rang-popu-icon display-none"><i class="material-icons">arrow_downward</i></span>                                             <span class="rang-diff display-none">-4</span>        </div><div class="name-wrap">                                             <div class="flag flag45 dom"></div><div class="name"><h2>Dom. Republik</h2></div></div><div class="medals-wrap">                                             <div class="med-gold"><span>0</span></div><div class="med-silver"><span>0</span></div><div class="med-bronze"><span>1</span></div><div class="med-total"><span>1</span></div></div></li>
+<li id="est" class="item" data-popu="131200"><div class="rang">                                             <span class="rang-orig"><strong>78</strong>.</span>                                             <span class="rang-popu display-none"><strong>67</strong>.</span>                                             <span class="rang-popu-icon display-none"><i class="material-icons">arrow_upward</i></span>                                             <span class="rang-diff display-none">11</span>        </div><div class="name-wrap">                                             <div class="flag flag45 est"></div><div class="name"><h2>Estland</h2></div></div><div class="medals-wrap">                                             <div class="med-gold"><span>0</span></div><div class="med-silver"><span>0</span></div><div class="med-bronze"><span>1</span></div><div class="med-total"><span>1</span></div></div></li>
+<li id="fin" class="item" data-popu="548201"><div class="rang">                                             <span class="rang-orig"><strong>78</strong>.</span>                                             <span class="rang-popu display-none"><strong>77</strong>.</span>                                             <span class="rang-popu-icon display-none"><i class="material-icons">arrow_upward</i></span>                                             <span class="rang-diff display-none">1</span>        </div><div class="name-wrap">                                             <div class="flag flag45 fin"></div><div class="name"><h2>Finnland</h2></div></div><div class="medals-wrap">                                             <div class="med-gold"><span>0</span></div><div class="med-silver"><span>0</span></div><div class="med-bronze"><span>1</span></div><div class="med-total"><span>1</span></div></div></li>
+<li id="mar" class="item" data-popu="3437751"><div class="rang">                                             <span class="rang-orig"><strong>78</strong>.</span>                                             <span class="rang-popu display-none"><strong>84</strong>.</span>                                             <span class="rang-popu-icon display-none"><i class="material-icons">arrow_downward</i></span>                                             <span class="rang-diff display-none">-6</span>        </div><div class="name-wrap">                                             <div class="flag flag45 mar"></div><div class="name"><h2>Marokko</h2></div></div><div class="medals-wrap">                                             <div class="med-gold"><span>0</span></div><div class="med-silver"><span>0</span></div><div class="med-bronze"><span>1</span></div><div class="med-total"><span>1</span></div></div></li>
+<li id="mda" class="item" data-popu="355415"><div class="rang">                                             <span class="rang-orig"><strong>78</strong>.</span>                                             <span class="rang-popu display-none"><strong>73</strong>.</span>                                             <span class="rang-popu-icon display-none"><i class="material-icons">arrow_upward</i></span>                                             <span class="rang-diff display-none">5</span>        </div><div class="name-wrap">                                             <div class="flag flag45 mda"></div><div class="name"><h2>Moldawien</h2></div></div><div class="medals-wrap">                                             <div class="med-gold"><span>0</span></div><div class="med-silver"><span>0</span></div><div class="med-bronze"><span>1</span></div><div class="med-total"><span>1</span></div></div></li>
+<li id="ngr" class="item" data-popu="18220196"><div class="rang">                                             <span class="rang-orig"><strong>78</strong>.</span>                                             <span class="rang-popu display-none"><strong>86</strong>.</span>                                             <span class="rang-popu-icon display-none"><i class="material-icons">arrow_downward</i></span>                                             <span class="rang-diff display-none">-8</span>        </div><div class="name-wrap">                                             <div class="flag flag45 ngr"></div><div class="name"><h2>Nigeria</h2></div></div><div class="medals-wrap">                                             <div class="med-gold"><span>0</span></div><div class="med-silver"><span>0</span></div><div class="med-bronze"><span>1</span></div><div class="med-total"><span>1</span></div></div></li>
+<li id="aut" class="item" data-popu="861109"><div class="rang">                                             <span class="rang-orig"><strong>78</strong>.</span>                                             <span class="rang-popu display-none"><strong>78</strong>.</span>                                             <span class="rang-popu-icon display-none"><i class="material-icons">arrow_forward</i></span>                                             <span class="rang-diff display-none">0</span>        </div><div class="name-wrap">                                             <div class="flag flag45 aut"></div><div class="name"><h2>Österreich</h2></div></div><div class="medals-wrap">                                             <div class="med-gold"><span>0</span></div><div class="med-silver"><span>0</span></div><div class="med-bronze"><span>1</span></div><div class="med-total"><span>1</span></div></div></li>
+<li id="por" class="item" data-popu="1034865"><div class="rang">                                             <span class="rang-orig"><strong>78</strong>.</span>                                             <span class="rang-popu display-none"><strong>81</strong>.</span>                                             <span class="rang-popu-icon display-none"><i class="material-icons">arrow_downward</i></span>                                             <span class="rang-diff display-none">-3</span>        </div><div class="name-wrap">                                             <div class="flag flag45 por"></div><div class="name"><h2>Portugal</h2></div></div><div class="medals-wrap">                                             <div class="med-gold"><span>0</span></div><div class="med-silver"><span>0</span></div><div class="med-bronze"><span>1</span></div><div class="med-total"><span>1</span></div></div></li>
+<li id="tto" class="item" data-popu="136009"><div class="rang">                                             <span class="rang-orig"><strong>78</strong>.</span>                                             <span class="rang-popu display-none"><strong>68</strong>.</span>                                             <span class="rang-popu-icon display-none"><i class="material-icons">arrow_upward</i></span>                                             <span class="rang-diff display-none">10</span>        </div><div class="name-wrap">                                             <div class="flag flag45 tto"></div><div class="name"><h2>Trinidad und Tobago</h2></div></div><div class="medals-wrap">                                             <div class="med-gold"><span>0</span></div><div class="med-silver"><span>0</span></div><div class="med-bronze"><span>1</span></div><div class="med-total"><span>1</span></div></div></li>
+<li id="uae" class="item" data-popu="915696"><div class="rang">                                             <span class="rang-orig"><strong>78</strong>.</span>                                             <span class="rang-popu display-none"><strong>79</strong>.</span>                                             <span class="rang-popu-icon display-none"><i class="material-icons">arrow_downward</i></span>                                             <span class="rang-diff display-none">-1</span>        </div><div class="name-wrap">                                             <div class="flag flag45 uae"></div><div class="name"><h2>VA Emirate</h2></div></div><div class="medals-wrap">                                             <div class="med-gold"><span>0</span></div><div class="med-silver"><span>0</span></div><div class="med-bronze"><span>1</span></div><div class="med-total"><span>1</span></div></div></li>
+
+
+</ul>
+
+
+
+
+
+</div>  <!-- END .isotope -->
+	
+	
+
+	
+
+	
+<div class="clearfix"></div>
+	
+<div id="footer">
+	<div class="textwidget">© <span id="copyright-year"></span> Markus Steiger - All Rights Reserved. <span class="divider"></span> <a href="http://www.01241.com/kontakt.html" class="black">Kontakt</a></div>	
+	<div class="toplink-wrapper"><a href="#top" class="toplink"><i class="material-icons">arrow_upward</i></a></div>				
+</div>			
+						
+
+</div> <!-- END #page -->
+
+<script>
+
+	$('#copyright-year').html(new Date().getFullYear());
+
+	$(window).scroll(function() {
+   	 	if ($(this).scrollTop()) {
+    	  	  $('.toplink-wrapper').fadeIn('slow');
+   	 	} else {
+   	    	 $('.toplink-wrapper').fadeOut('slow');
+   			}
+	});
+
+  	$('a[href=#top]').click(function(){
+         	$('html, body').animate({scrollTop:0}, 'fast');
+         	return false;
+     	});
+  	
+  	
+  	
+  	
+  	var header = $("#header");
+    $(window).scroll(function() {    
+      var scroll = $(window).scrollTop();
+         if (scroll >= window.innerHeight / 2) {
+            header.addClass("fixed");
+          } else {
+            header.removeClass("fixed");
+          }
+  });
+    
+    
+    
+    
+  	
+</script> 
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-37356161-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+</body>
+</html>
