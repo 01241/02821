@@ -23,8 +23,9 @@ Demo
 
 ## Lizenz
 
-<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Lizenzvertrag" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Dataset" property="dct:title" rel="dct:type">Project 02821</span> von <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/01241/02821" property="cc:attributionName" rel="cc:attributionURL">01241.com</a> ist lizenziert unter einer <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Namensnennung – Weitergabe unter gleichen Bedingungen 4.0 International Lizenz</a>.
+MIT License (MIT)
 
-## Kontakt
+## Contact
 
-Bei Fragen wenden Sie sich bitte an steiger.01241@gmail.com oder an [@01241(https://twitter.com/01241)
+*Website: [_01241.com_](http://www.01241.com)
+*Twitter: [@01241(https://twitter.com/01241)
