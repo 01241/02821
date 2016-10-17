@@ -28,4 +28,4 @@ MIT License (MIT)
 ## Contact
 
 * Website: [_01241.com_](http://www.01241.com)
-* Twitter: [@01241(https://twitter.com/01241)
+* Twitter: [_@01241_](https://twitter.com/01241)
