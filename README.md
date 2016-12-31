@@ -9,7 +9,7 @@ AndroidStudio https://developer.android.com/studio/index.html
 Demo
 
 * Offline: file:///C:/Users/01241/Documents/400-Projekte/02821%20Medaillen_vis/offline_develop/02821/index.html
-* Online: [https://markussteiger.ch/projekte/02821/](http://markussteiger.ch/projekte/02821/)
+* Online: [https://markussteiger.ch/projekte/02821/](https://markussteiger.ch/projekte/02821/)
 
 
 ### Formating
