@@ -1,0 +1,87 @@
+{
+  "name": "01241/02821",
+  "version": "0.1.4",
+  "libraries": {
+    "xv": "^1.1.25"
+  },
+  "title": "Test App",
+  "branch": "",
+  "style": {
+    "name": "Swiss",
+    "componentSet": {
+      "nav": "nav/BasicNav",
+      "header": "header/SwissHeader",
+      "article": "article/SwissArticle",
+      "footer": "footer/BasicFooter"
+    },
+    "fontFamily": "\"Helvetica Neue\", Helvetica, Arial, sans-serif",
+    "heading": {
+      "fontWeight": 700,
+      "letterSpacing": "-0.01em"
+    },
+    "layout": {
+      "fluid": true
+    },
+    "colors": {
+      "text": "#000",
+      "background": "#fff",
+      "primary": "#05a",
+      "secondary": "#444",
+      "highlight": "#f30",
+      "border": "#ccc",
+      "muted": "#eee"
+    }
+  },
+  "content": [
+    {
+      "component": "nav",
+      "links": [
+        {
+          "href": "http://markussteiger.ch/projekte/02821/",
+          "text": "Home"
+        },
+        {
+          "href": "https://github.com/01241/02821",
+          "text": "GitHub"
+        }
+      ]
+    },
+    {
+      "component": "header",
+      "heading": "02821",
+      "subhead": "Test Offline Workflow with AndroidStudio; Responsive Tables; Isotope; Sort; Filter",
+      "children": [
+        {
+          "component": "ui/TweetButton",
+          "text": "02821: Test Offline Workflow with AndroidStudio; Responsive Tables; Isotope; Sort; Filter",
+          "url": "http://markussteiger.ch/projekte/02821/"
+        },
+        {
+          "component": "ui/GithubButton",
+          "user": "01241",
+          "repo": "02821"
+        }
+      ]
+    },
+    {
+      "component": "article",
+      "metadata": {
+        "source": "github.readme"
+      },
+      "html": "<h1>02821 Projectname</h1>\n<p>Responsive Tables; Isotope; Sort; Filter</p>\n<p>This files are hosted on Github for test purpose only. I am searching for a simple workflow for Offline Developement and versioning.</p>\n<p>Related Links\nAndroidStudio <a href=\"https://developer.android.com/studio/index.html\">https://developer.android.com/studio/index.html</a></p>\n<p>Demo</p>\n<ul>\n<li>Offline: file:///C:/Users/01241/Documents/400-Projekte/02821%20Medaillen_vis/offline_develop/02821/index.html</li>\n<li>Online: <a href=\"https://markussteiger.ch/projekte/02821/\">https://markussteiger.ch/projekte/02821/</a></li>\n</ul>\n<h3>Formating</h3>\n<h4>Table and Links</h4>\n<table>\n<thead>\n<tr>\n<th>Column Title</th>\n<th>Column Title</th>\n<th>Column Title</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Bold</strong></td>\n<td>Hello</td>\n<td><a href=\"http://www.01241.com\"><em>Link</em></a></td>\n</tr>\n<tr>\n<td>Lorem</td>\n<td>Ipsum</td>\n<td>Text</td>\n</tr>\n</tbody>\n</table>\n<h2>Lizenz</h2>\n<p>MIT License (MIT)</p>\n<h2>Contact</h2>\n<p>Markus Steiger</p>\n<ul>\n<li>Website: <a href=\"http://www.01241.com\"><em>01241.com</em></a></li>\n<li>Twitter: <a href=\"https://twitter.com/01241\"><em>@01241</em></a></li>\n</ul>\n"
+    },
+    {
+      "component": "footer",
+      "links": [
+        {
+          "href": "https://github.com/01241/02821",
+          "text": "GitHub"
+        },
+        {
+          "href": "https://github.com/01241",
+          "text": "01241"
+        }
+      ]
+    }
+  ]
+}
